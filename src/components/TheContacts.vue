@@ -2,14 +2,9 @@
   <div class="сontacts" id="сontacts">
     <h1 class="сontacts__title">Наші контакти</h1>
 
-     <div class="map" id="map">
-      <VueGoogleMap >
-     <google-map>
-
-     </google-map>
-
-     
-      </VueGoogleMap>
+     <div class="google-map">
+      <VueGoogleMaps :center="center" :zoom="12" style="width: 100%; height: 100%">
+    </VueGoogleMaps>
     </div>
   </div>
 </template>
@@ -35,34 +30,25 @@
   line-height: 160%;
   font-size: 60px;
   position: absolute;
-  top: 5%;
+  top: 13%;
   text-transform: uppercase;
   font-size: 70px;
 }
 
-.map{
-  width: 400px;
-  height: 400px;
-}
+
+
 </style>
 
 <script>
-import VueGoogleMap from "vuejs-google-maps";
+import * as VueGoogleMaps from 'vue2-google-maps'
 
 export default {
   name: "the-contacts",
-  components: { VueGoogleMap },
+  components: { VueGoogleMaps },
   data: function() {
-    return {
-      name: "map",
-     
-    };
+    return { 
+      center: {lat:50.474162639389995,  lng: 30.44649115494373},
+      };
   },
-   mounted() {
-   
-     
-  },
-  methods: {
-    },
 }
-</script>
+   </script>

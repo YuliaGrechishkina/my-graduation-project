@@ -4,13 +4,17 @@
         </div>
         <h1 class="works__title"> Наші роботи</h1>
         <div class="works__carousel">
-       <VueSlickCarousel :arrows="true" :dots="true">
-      <div><img src="@/assets/sl4.jpg" alt="" /></div>
-      <div><img src="@/assets/sl2.jpg" alt="" /></div>
-      <div><img src="@/assets/sl3.jpg" alt="" /></div>
-      <div><img src="@/assets/sl4.jpg" alt="" /></div>
-       <div><img src="@/assets/sl1.jpg" alt="" /></div>
-    </VueSlickCarousel>
+       <VueSlickCarousel :arrows="true" 
+                                :dots="true" 
+                                :edgeFriction = "0.35"
+                                :infinite = "false"
+                                :speed = "500"
+                                :slidesToShow = "1"
+                                :slidesToScroll = "1">
+                <div class="works__slide" v-for="slide in slides" :key="slide.imgSrc">
+                  <img class="works__img" alt="icon" :src=slide.imgSrc>
+                </div>
+       </VueSlickCarousel>
         </div>
 <div class="works__block-color-sec">
         </div>
@@ -19,14 +23,40 @@
 </template>
 
 <script>
+import VueSlickCarousel from "vue-slick-carousel";
+import "vue-slick-carousel/dist/vue-slick-carousel.css";
+import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 
 export default {
   name: "our-works",
   components: {VueSlickCarousel},
-};
-import VueSlickCarousel from "vue-slick-carousel";
-import "vue-slick-carousel/dist/vue-slick-carousel.css";
-import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
+
+
+data() {
+    return {
+          slides: [
+        {
+          imgSrc: require("@/assets/sl5.jpg"),
+        },
+        {
+          imgSrc: require("@/assets/sl4.jpg"),
+        },
+        {
+          imgSrc: require("@/assets/sl3.jpg"),
+        },
+        {
+          imgSrc: require("@/assets/sl2.jpg"),
+        },
+        {
+          imgSrc: require("@/assets/sl1.jpg"),
+        },
+      ],
+    };
+  }
+}
+
+
+
 
 </script>
 
@@ -61,7 +91,7 @@ background-color: rgba(0, 0, 0, 0.796);
 line-height: 160%;
 font-size: 60px;
 position: absolute;
-top:5%;
+top:10%;
 text-transform: uppercase;
 font-size: 70px;
 }
@@ -69,11 +99,14 @@ font-size: 70px;
  width: 800px;
   height: 600px;
   position: absolute;
-  top: 30%;
+  top: 65%;
+   margin: auto;
+   left:44%;
+transform:translate(-50%, -50%);
    }
    .works__carousel img{
-max-height: 500px;
-width: auto;
+height: 550px;
+min-width: 1000px;
    }
 
 .works__block-color-sec{
@@ -89,6 +122,19 @@ width: auto;
     background-size: cover;
 }
 
+.slick-slider[data-v-3d1a4f76]{
+  min-width: 1000px;
+  display: flex;justify-content: center;
+  align-items: center;
+}
 
+.slick-prev:before, .slick-next:before{
+ font-family: 'slick';
+    font-size: 70px;
+    line-height: 1;
+    opacity: 0.75;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+}
 
 </style>

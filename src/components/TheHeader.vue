@@ -120,7 +120,9 @@ a {
   text-transform: uppercase;
 }
 .nav__contacns a:hover {
-  transform: scale(1.5);
+  transform: translateX(20px) scale(1.3);
+  
+  
 }
 
 .nav__link:hover {
@@ -129,6 +131,8 @@ a {
 }
 
 address:hover {
-  transform: scale(1.5);
+  transform:translateX(20px);
+  transform: translateX(27px) scale(1.3);
+  
 }
 </style>
