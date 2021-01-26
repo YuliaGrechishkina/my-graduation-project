@@ -3,7 +3,8 @@
     <h1 class="сontacts__title">Наші контакти</h1>
 
      <div class="google-map">
-      <VueGoogleMaps :center="center" :zoom="12" style="width: 100%; height: 100%">
+      <VueGoogleMaps :center="center" :zoom="8" style="width:500px; height: 300px">
+
     </VueGoogleMaps>
     </div>
   </div>
@@ -35,7 +36,10 @@
   font-size: 70px;
 }
 
-
+.google-map{
+  width: 50%;
+  height: 500px;
+}
 
 </style>
 
@@ -50,5 +54,5 @@ export default {
       center: {lat:50.474162639389995,  lng: 30.44649115494373},
       };
   },
-}
+ }
    </script>

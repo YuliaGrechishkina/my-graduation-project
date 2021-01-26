@@ -85,7 +85,7 @@ export default {
   font-size: 90px;
   color: #ffffff;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 1px;
   margin-top: 10px;
   padding: 10px;
  
@@ -98,6 +98,7 @@ export default {
   max-height: 120px;
   margin-right: -50px;
   margin-left: -30px;
+  margin-top: 5px;
 }
 
 .nav__contacns {
@@ -133,6 +134,6 @@ a {
 address:hover {
   transform:translateX(20px);
   transform: translateX(27px) scale(1.3);
-  
+
 }
 </style>
