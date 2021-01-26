@@ -1,5 +1,7 @@
 # my-graduation-project
 
+YUG - beauty salon
+
 ## Project setup
 ```
 yarn install
