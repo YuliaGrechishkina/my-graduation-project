@@ -1,8 +1,7 @@
 <template>
    <div class="about" id="about">
-       <div class="about__wrapper">
-                <img class ="about__img-girl" src="@/assets/2.jpg" alt="">
-                <img class ="about__img-leaf" src="@/assets/1.jpg" alt="">
+                      <div class ="about__img-girl"  > </div>
+                <div class ="about__img-leaf"  ></div>
        <div class="about__block-color">
         </div>
  <div class="about__info">
@@ -12,69 +11,80 @@
      <p class="about__info-text">
 YUG запрошує вас до себе в гості, на територію здоров'я та краси. Стрижка, укладка, фарбування, манікюр, педикюр, оформлення брів, масаж, косметологічні процедури - все це чекає саме Вас.
      </p>
-     <button class="about__info-btn">
+     <button class="about__info-btn" id="show-modal" @click="showModal = !showModal">
 запис он-лайн
      </button>
+ 
         </div>
-         </div> 
+        
         <h1 class="about__info-title"> YUG - це територія здоров'я та краси, створена саме для Вас</h1>
         </div>
+  
 </template>
 
 <script>
 export default {
   name: 'about-us',
+ data() {
+        return{  
+        }
+ }
  
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+   
+
 .about{
-    height: 1150px;
+    height: 540px;
     width: 100%;
     position: relative;
-&__wrapper{
-    width: 100%;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    position: relative;
-    
-}
+   
+
 &__img-girl{
- padding-top: 10%;
- padding-left: 10%;
-    width: 700px;
-    height: auto;
-z-index: 1;
+position: absolute;
+ top: 5%;
+ left: 10%;
+    width: 40%;
+    height: 65%;
+z-index: 2;
+background-image: url(../assets/2.jpg);
+background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 &__img-leaf{
     position: absolute;
-    top: 0;
+    top: 0.5%;
     right: 0;
-    width: 700px;
-    height: 200;
+     width: 40%;
+    height: 100%;
+    background-image: url(../assets/1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
 }
 
 &__block-color{
     background-color: #f7af89;
-    width: 600px;
-    height: 950px;
+    width: 35%;
+    height: 75%;
     z-index: -1;
      position: absolute;
      left: 0;
-     top: 50%;
+     top: 25%;
 }
 
 &__info{
 position: absolute;
-top: 40%;
-left: 45%;
+top: 10%;
+left: 40%;
 z-index: 2;
 background-color: #fff;
-width: 500px;
-height: 300px;
+width: 30%;
+height: 45%;
 color: rgba(0, 0, 0, 0.796);
 display: flex;
 flex-direction: column;
@@ -86,14 +96,15 @@ padding: 10px;
 }
 
 &__info-subtitle{
-  font-size: 40px;
+  margin-top: 10px;
+  font-size: 35px;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
 &__info-text{
   font-size: 18px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   font-style: italic;
 }
 &__info-title{
@@ -102,15 +113,21 @@ padding: 10px;
   align-items: center;
   text-align: center;
   width: 70%;
+  height: 30%;
 color: #ffffff;
-background-color: rgba(0, 0, 0, 0.796);
+background-color: rgba(9, 26, 12, 0.796);
 line-height: 160%;
-font-size: 60px;
-position: absolute;
-padding: 30px;
-left:15%;
-bottom: 3%;
+font-size: 40px;
+margin: auto;
+  position: absolute;
+  top: 60%; left: 0; bottom: 0; right: 0;
+  z-index: 3;
 }
+
+&__info-title:hover{
+  transform: translateX(10px) scale(1.1);
+}
+
 
 &__info-btn{
   background-color: #f7af89;
@@ -124,7 +141,7 @@ bottom: 3%;
 }
 &__info-btn:hover{
 background-color: rgba(56, 90, 61, 0.796);
-
+transform:  scale(1.3);
 }
 }
 </style>

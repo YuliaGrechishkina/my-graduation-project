@@ -1,7 +1,7 @@
 <template>
   <div class="services" id="service">
     <div class="services__block-color"></div>
-    <ul class="services__galery-list">
+        <ul class="services__galery-list">
       <li
         class="services__item"
         v-for="service in services"
@@ -48,22 +48,26 @@
         </p>
       </li>
         </ul>
+        <a href="#header" class="btn_up">
+<i class="fas fa-chevron-up"></i>
+        </a>
   </div>
 </template>
 
 <style scoped lang="scss">
 .services {
-  height: 900px;
+  height: 760px;
   width: 100%;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
 }
 .services__block-color {
   background-color: #f7af89;
-  width: 600px;
-  height: 150px;
+  width: 35%;
+  height: 70%;
   z-index: -1;
   position: absolute;
   left: 0;
@@ -72,23 +76,24 @@
 
 .services__galery-list, .services__galery-list-back{
   position: absolute;
-  top: 0;left: 0;
+  top: 0; 
+  left: 0;
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+
 }
 
 .services__galery-list{
 z-index: 1;
 }
 
-
 .services__item {
-  min-height: 300px;
-  width: 500px;
+  height: 250px;
+  width: 30%;
   margin: 2px;
   display: flex;
   justify-content: center;
@@ -99,32 +104,9 @@ z-index: 1;
   text-align: center;
   cursor: pointer;
 }
-
-.services__item-title {
-  font-size: 30px;
-  font-weight: normal;
-  text-transform: uppercase;
-  color: #275c4a;
-}
-.services__item-title span {
-  font-size: 43px;
-  font-weight: bold;
-  color: #275c4a;
-  text-shadow: 2px 1px 0px #749979;
-}
-
-.services__item-text {
-  font-size: 50px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #275c4a;
-  background-color: rgba(233, 243, 231, 0.5);
-  width: 100%;
-  margin-bottom: 10px;
-}
 .services__item-back {
-  min-height: 300px;
-  width: 500px;
+   height: 250px;
+  width: 30%;
   margin: 2px;
   display: flex;
   justify-content: center;
@@ -136,7 +118,23 @@ z-index: 1;
   background-position: center;
   background-size: cover;
   cursor: pointer;
-  
+  }
+
+.services__item-title {
+  font-size: 40px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #275c4a;
+}
+
+.services__item-text {
+  font-size: 35px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #275c4a;
+  background-color: rgba(233, 243, 231, 0.5);
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .services__item-back-text {
@@ -149,27 +147,6 @@ z-index: 1;
    background-color: rgba(233, 243, 231, 0.8);
 }
 
-//.services__item--all {
-//  background-image: url(../assets/3.jpg);
- // background-repeat: no-repeat;
- // background-position: center;
-//  background-size: cover;
-//}
-//.services__item-back-all {
-//  min-height: 300px;
- // width: 500px;
-//  margin: 2px;
- // display: flex;
- // justify-content: center;
- // align-items: center;
-//  flex-direction: column;
- // text-align: center;
-//  background-image: url(../assets/all.jpg);
-//  background-repeat: no-repeat;
- // background-position: center;
- // background-size: cover;
-//  cursor: pointer;
-//}
 
 .services__item-back-text-all {
   color: #275c4a;
@@ -198,6 +175,27 @@ z-index: 1;
   position: absolute;
   top: 0;
 }
+
+
+.btn_up{
+  background-color: rgba(9, 26, 12, 0.796);
+  z-index: 5;
+  width: 5%;
+  height: 7%;
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  position: absolute;
+  bottom: 7%;
+  right: 0;
+  position: fixed;
+}
+.btn_up:hover{
+  transform: scale(1.2);
+}
 </style>
 
 <script>
@@ -213,8 +211,8 @@ export default {
           bgImg: require("@/assets/1.jpg"),
           bgImgBack: require("@/assets/all.jpg"),
           service1:
-            "на нашій території Ви можете отримати весь спектр послуг для здоров'я і краси.Ласкаво просимо на YUG!",
-          service2: "",
+            "на нашій території Ви можете отримати весь спектр послуг для здоров'я і краси.       ",
+          service2: "Ласкаво просимо на YUG!",
           service3: "",
           service4: "",
           service5: "",
@@ -274,7 +272,7 @@ export default {
           bgImg: require("@/assets/massag.jpg"),
           bgImgBack: require("@/assets/3.jpg"),
           service1: "усі види масажу",
-          service2: "Стоун-терапія",
+          service2: "коррекція фігури",
           service3: "SPA догляд",
           service4: "Скрабування, ",
           service5: " зволоження",

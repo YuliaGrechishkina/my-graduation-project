@@ -13,6 +13,8 @@
         <address>
           <i class="fas fa-map-marker-alt"></i> м. Київ, вул. Щусєва,6
         </address>
+
+       
       </div>
     </div>
     <div class="nav">
@@ -44,14 +46,19 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.header{
+  width: 100%;
+ min-height: 100px;
+  height: 170px;
+}
 .nav {
-  margin-bottom: 30px;
   background-color: rgba(0, 0, 0, 0.789);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: 30px;
 }
 
 .nav__logo {
@@ -61,28 +68,30 @@ export default {
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   width: 100%;
+  height: 135px;
 }
 
 .nav__link-item {
   list-style: none;
   display: inline-flex;
-  margin-right: 30px;
+  margin-right: 50px;
 }
 .nav__link:last-child {
   margin-right: 0;
   width: 100%;
 }
 .nav__links-list {
-  margin-top: 15px;
+  margin-top: 10px;
   list-style: none;
   display: inline-flex;
+  font-size: 18px;
 }
 
 .nav__logo-link {
   text-decoration: none;
-  font-size: 90px;
+  font-size: 70px;
   color: #ffffff;
   font-weight: bold;
   margin-bottom: 1px;
@@ -92,10 +101,10 @@ export default {
 }
 
 .nav__logo-link:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .nav__logo_img {
-  max-height: 120px;
+  max-height: 100px;
   margin-right: -50px;
   margin-left: -30px;
   margin-top: 5px;
@@ -122,9 +131,7 @@ a {
 }
 .nav__contacns a:hover {
   transform: translateX(20px) scale(1.3);
-  
-  
-}
+  }
 
 .nav__link:hover {
   color: rgba(30, 130, 76, 1);
