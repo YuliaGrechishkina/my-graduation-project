@@ -32,7 +32,7 @@
           <a href="#works" class="nav__link">Наші роботи</a>
         </li>
         <li class="nav__link-item">
-          <a href="#contact" class="nav__link">Наші контакти</a>
+          <a href="#сontacts" class="nav__link">Наші контакти</a>
         </li>
       </ul>
     </div>

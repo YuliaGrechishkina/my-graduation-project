@@ -208,7 +208,9 @@ height: 20%;
   position: absolute;
   bottom: 10%;
   color: #FFF;
-
+box-shadow:14px 19px 20px 0px rgba(0,0,0,0.71);
+-webkit-box-shadow:14px 19px 20px 0px rgba(0,0,0,0.71);
+-moz-box-shadow:14px 19px 20px 0px rgba(0,0,0,0.71);
 }
 .why_we__info-btn:hover{
 background-color:rgba(100, 141, 92, 0.9) ;

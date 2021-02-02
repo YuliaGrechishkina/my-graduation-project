@@ -157,7 +157,9 @@ margin: auto;
   font-size: 18px;
   text-transform: uppercase;
   font-weight: bold;
-  
+  box-shadow:14px 19px 20px 0px rgba(0,0,0,0.71);
+-webkit-box-shadow:14px 19px 20px 0px rgba(0,0,0,0.71);
+-moz-box-shadow:14px 19px 20px 0px rgba(0,0,0,0.71);
 }
 &__info-btn:hover{
 background-color: rgba(56, 90, 61, 0.796);

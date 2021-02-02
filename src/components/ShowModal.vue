@@ -40,13 +40,10 @@
               
                     <div class="inputWrap__input inputWrap__input-last">
                       <i class="fas fa-th-list"></i>
-                      <div
-                        class="selectric-wrapper selectric-selectric selectric-selectric_pdp selectric-iconed selectric-iconed_service"
-                      >
-                        <div class="selectric-hide-select">
+                       <div class="selectric-hide-select">
                           <select
                             name="service"
-                            class="selectric selectric_pdp iconed iconed_service"
+                            class="select"
                             tabindex="-1"
                           >
                             <option value="">Оберіть розділ</option>
@@ -73,7 +70,7 @@
                             <option value="Магазин">Магазин</option>
                           </select>
                         </div>
-                      </div> 
+                     
                                           
                       </div>
 
@@ -155,7 +152,7 @@ export default {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.9);
   z-index: 100;
   display: flex;
   justify-content: center;
@@ -172,10 +169,17 @@ export default {
   flex-direction: column;
   width: 40%;
   height: 70%;
+  background-image: url(../assets/4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .modal__content {
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .modal-header{
   padding: 15px;
@@ -183,8 +187,8 @@ export default {
 }
 
 .modal-header {
-  border-bottom: 1px solid #eeeeee;
-  color: #4aae9b;
+  border-bottom: 1px solid #ffff;
+  color:  #ffff;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
@@ -213,7 +217,7 @@ export default {
   padding: 10px;
   cursor: pointer;
   font-weight: bold;
-  color: #4aae9b;
+  color: #ffff;
   background: transparent;
   position: absolute;
   top: -10%;
@@ -222,43 +226,47 @@ export default {
 }
 
 .btn-green {
-  color: white;
-  background: #4aae9b;
-  border: 1px solid #4aae9b;
-  border-radius: 2px;
+  color:  #fff;
+ background-color: #18522d;
+  border: 1px solid #fff;
   font-size: 20px;
   text-transform: uppercase;
   padding: 3%;
- 
+ box-shadow:14px 19px 20px 0px rgba(0,0,0,0.71);
+-webkit-box-shadow:14px 19px 20px 0px rgba(0,0,0,0.71);
+-moz-box-shadow:14px 19px 20px 0px rgba(0,0,0,0.71);
 }
 
 .modal-header h1 {
   width: 70%;
+  
 }
 
 .btn-close:hover {
   color: #ffffff;
-  background-color: #4aae9b;
+  background-color: #18522d;
+  
 }
 
 .btn-green:hover {
-  background-color: #2b6b60;
+  background-color:#18522d;
 transform:  scale(1.3);
-
+color: #fff;
 }
 
 .form {
-  height: 100%;
+  
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
-  margin-left: 10%;
+ margin-left: 20%;
+  
 }
 
 .fas {
   font-size: 25px;
-  color: #29645a;
+  color:   #18522d;
   margin-right: 30px;
 }
 
@@ -273,9 +281,23 @@ transform:  scale(1.3);
 
 }
 
-
+select{
+  height: 100%;
+  box-shadow:10px 13px 20px 0px rgba(0,0,0,0.71);
+-webkit-box-shadow:10px 13px 20px 0px rgba(0,0,0,0.71);
+-moz-box-shadow:10px 13px 20px 0px rgba(0,0,0,0.71);
+border: 2px solid #000;
+margin-left: 1.5%;
+}
 
 input{
   height: 100%;
-}
+  box-shadow:10px 13px 20px 0px rgba(0,0,0,0.71);
+-webkit-box-shadow:10px 13px 20px 0px rgba(0,0,0,0.71);
+-moz-box-shadow:10px 13px 20px 0px rgba(0,0,0,0.71);
+  }
+
+  .input_date, .input_tel, .input_text{
+    margin-left: 1.5%;
+  }
 </style>
