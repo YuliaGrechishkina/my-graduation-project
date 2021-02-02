@@ -85,6 +85,30 @@
                           placeholder="Введіть послугу"
                         />
   </div>
+
+ <div class="inputWrap__input">
+   <i class="fas fa-calendar-alt"></i>
+ <input
+                          class="input input_date"
+                          type="date"
+                           value="2020-02-8"
+       min="2020-02-8" max="2050-02-7"
+                        />
+
+ </div>
+
+<div class="inputWrap__input">
+   <i class="fas fa-clock"></i>
+ <input
+                          class="input input_time"
+                          type="time" id="appt" name="appt"
+       min="09:00" max="20:00" required
+                        />
+
+ </div>
+
+
+
             </form>
           </div>
         </slot>
@@ -146,8 +170,8 @@ export default {
   overflow-x: auto;
   display: flex;
   flex-direction: column;
-  width: 30%;
-  height: 45%;
+  width: 40%;
+  height: 70%;
 }
 
 .modal__content {
@@ -175,12 +199,13 @@ export default {
   justify-content: flex-end;
   align-items: center;
   padding: 15px 40px;
+ 
 }
 
 .modal-body {
   position: relative;
   padding: 10px 50px;
-  height: 55%;
+  height: 75%;
 }
 
 .btn-close {
@@ -234,22 +259,21 @@ transform:  scale(1.3);
 .fas {
   font-size: 25px;
   color: #29645a;
-  margin-right: 10%;
+  margin-right: 30px;
 }
 
 .inputWrap__input {
-  height: 20%;
+  height: 15%;
   display: flex;
   flex-direction: row;
   margin-bottom: 5%;
   width: 100%;
   justify-content: start;
   align-items: center;
+
 }
 
-.iconed_service {
-margin-right: 5%;
-}
+
 
 input{
   height: 100%;

@@ -38,8 +38,13 @@
       </h1>
       <img src="@/assets/we.jpg" alt="" class="why_we__img" />
 
+      <button class="why_we__info-btn" id="show-modal" @click="showModal">запис он-лайн</button>
       
-    </div>
+      <ShowModal  v-show="isModalVisible"
+      @close="closeModal">
+            </ShowModal>
+         </div>
+    
     <div class="why_we__about why_we__about-sec ">
        <div class="why_we__about-wrapper">
       <h6 class="why_we__about-subtitle">
@@ -73,8 +78,10 @@
       </p>
          </div>
     </div>
-    <div class="why_we__block-color"></div>
-  </div>
+    <div class="why_we__block-color">
+</div>
+    </div>
+  
 </template>
 
 <style scoped>
@@ -190,10 +197,42 @@ height: 20%;
     width: 95%;
   }
 
+.why_we__info-btn{
+  background-color:  rgba(56, 90, 61, 0.796);
+  width: 400px;
+  height: 70px;
+  margin-bottom: 20px;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  bottom: 10%;
+  color: #FFF;
+
+}
+.why_we__info-btn:hover{
+background-color:rgba(100, 141, 92, 0.9) ;
+transform:  scale(1.3);
+}
 </style>
 
 <script>
+import ShowModal from "@/components/ShowModal.vue";
 export default {
   name: "why-we",
+  components: {ShowModal},
+  data() {
+    return {
+      isModalVisible: false,
+        };
+  },
+  methods: {
+   showModal() {
+        this.isModalVisible = true;
+      },
+      closeModal() {
+        this.isModalVisible = false;
+      }
+    },
 };
 </script>

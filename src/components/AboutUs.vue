@@ -164,22 +164,6 @@ background-color: rgba(56, 90, 61, 0.796);
 transform:  scale(1.3);
 }
 
-&__info-btn{
-  background-color: #f7af89;
-  width: 300px;
-  height: 50px;
-  margin-bottom: 20px;
-  font-size: 18px;
-  text-transform: uppercase;
-  font-weight: bold;
-  
-}
-&__info-btn:hover{
-background-color: rgba(56, 90, 61, 0.796);
-transform:  scale(1.3);
-}
-
-
 }
 </style>
 
