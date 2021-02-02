@@ -36,10 +36,15 @@
   <a href="https://www.instagram.com/yug.territoriya.krasoty/" class="contacts__instagram"> 
   <i class="fab fa-instagram"></i> yug.territoriya.krasoty </a>
 
-   <button class="contacts__info-btn" id="show-modal" @click="showModal = !showModal">
+   <button class="contacts__info-btn" id="show-modal" @click="showModal">
 запис он-лайн
      </button>
-    
+      <ShowModal  v-show="isModalVisible"
+      @close="closeModal">
+     
+      
+      
+      </ShowModal>
     </div> 
     <div class="сontacts__block-color">
         </div>
@@ -172,6 +177,7 @@ color: #ffffff;
 <script>
 import Vue from 'vue'
 import * as VueGoogleMaps from 'vue2-google-maps'
+import ShowModal from "@/components/ShowModal.vue";
 Vue.use(VueGoogleMaps, {
     load: {
         key: 'AIzaSyAgfdOKG9WJQfsp5Udt10KEPUOyMIpvGyw',
@@ -181,14 +187,25 @@ Vue.use(VueGoogleMaps, {
 const myMarker = { lat: 50.4741356, lng: 30.4452074 };
 export default {
   name: "the-contacts",
+   components: {ShowModal},
+  methods: {
+   showModal() {
+        this.isModalVisible = true;
+      },
+      closeModal() {
+        this.isModalVisible = false;
+      },
+  },
   data() {
     return { 
         center: myMarker,
         markers: [{
           position: myMarker
         }],
-        places: []
-      };
-  },
- }
+        places: [],
+        isModalVisible: false,
+      } 
+  }
+}  
+  
    </script>

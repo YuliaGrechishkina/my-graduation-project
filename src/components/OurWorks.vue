@@ -173,7 +173,7 @@ top:2%;
 left: 9.7%;
 text-transform: uppercase;
 font-size: 50px;
-z-index: 5;
+z-index: 1;
 }
 .works__carousel {
  width: 90%;height: 22em;
@@ -239,7 +239,7 @@ top:50%;
 right: 9.7%;
 text-transform: uppercase;
 font-size: 45px;
-z-index: 5;
+z-index: 1;
 }
 
 .reviews__carousel{

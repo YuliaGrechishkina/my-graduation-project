@@ -306,7 +306,7 @@ export default {
 
 {
           id: 8,
-          title: "епіляція",
+          title: "депіляція",
           bgImg: require("@/assets/depilacia.jpg"),
           bgImgBack: require("@/assets/3.jpg"),
           service1: "шугарінг",

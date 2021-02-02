@@ -11,25 +11,45 @@
      <p class="about__info-text">
 YUG запрошує вас до себе в гості, на територію здоров'я та краси. Стрижка, укладка, фарбування, манікюр, педикюр, оформлення брів, масаж, косметологічні процедури - все це чекає саме Вас.
      </p>
-     <button class="about__info-btn" id="show-modal" @click="showModal = !showModal">
-запис он-лайн
-     </button>
- 
-        </div>
+     
+ <button class="about__info-btn" id="show-modal" @click="showModal">запис он-лайн</button>
+      
+      <ShowModal  v-show="isModalVisible"
+      @close="closeModal">
+     
+      
+      
+      </ShowModal>
+         </div>
         
+
+
+
+       
         <h1 class="about__info-title"> YUG - це територія здоров'я та краси, створена саме для Вас</h1>
-        </div>
+        
+</div>
   
 </template>
 
 <script>
+import ShowModal from "@/components/ShowModal.vue";
 export default {
   name: 'about-us',
+  components: {ShowModal},
  data() {
-        return{  
-        }
- }
- 
+    return {
+      isModalVisible: false,
+        };
+  },
+  methods: {
+   showModal() {
+        this.isModalVisible = true;
+      },
+      closeModal() {
+        this.isModalVisible = false;
+      }
+    },
 }
 </script>
 
@@ -92,7 +112,7 @@ justify-content: center;
 align-items: center;
 text-align: center;
 padding: 10px;
-
+z-index: 5;
 }
 
 &__info-subtitle{
@@ -143,6 +163,23 @@ margin: auto;
 background-color: rgba(56, 90, 61, 0.796);
 transform:  scale(1.3);
 }
+
+&__info-btn{
+  background-color: #f7af89;
+  width: 300px;
+  height: 50px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  
+}
+&__info-btn:hover{
+background-color: rgba(56, 90, 61, 0.796);
+transform:  scale(1.3);
+}
+
+
 }
 </style>
 
