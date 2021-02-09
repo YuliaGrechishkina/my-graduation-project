@@ -17,7 +17,6 @@ import AboutUs from "@/components/AboutUs.vue";
 import OurServices from "@/components/OurServices.vue";
 import WhyWe from "@/components/WhyWe.vue";
 import OurWorks from "@/components/OurWorks.vue";
-
 import TheContacts from "@/components/TheContacts.vue";
 import TheFooter from "@/components/TheFooter.vue";
 
@@ -46,7 +45,6 @@ export default {
   scroll-behavior: smooth;
   min-height: 100vh;
   font-size: 100%;
-  font-size: 16px;
   color: #ffffff;
 }
 

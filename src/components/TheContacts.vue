@@ -50,61 +50,88 @@
         </div>
   </div>
 </template>
-<style scoped>
+<style scoped lang="scss">
 .сontacts {
-  height: 650px;
-  width: 100%;
- 
-  
-  position: relative;
-}
+ width: 100%;
+position: relative;
+height: 90vh; 
+  }
+
 .сontacts__title {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+ color: #ffffff;
+background-color: rgba(9, 26, 12, 0.796);
+text-transform: uppercase;
+position: absolute;
+  width: 70%;
+  height: 10%;
+  font-size: 3vh;
+  margin-bottom: 2vh;
+  top: 0;
+left: 5%;
+@media (min-width: 576px) { }
+
+@media (min-width: 768px) {  
+ 
+}
+@media (min-width: 992px) {  
+ 
+}
+@media (min-width: 1200px) {  
   width: 40%;
   height: 15%;
-color: #ffffff;
-background-color: rgba(9, 26, 12, 0.796);
-line-height: 160%;
-font-size: 60px;
-text-transform: uppercase;
-font-size: 50px;
-margin-bottom: 40px;
-position: absolute;
-top: -5%;
+  font-size: 5.5vh;
+  margin-bottom: 2vh;
+  top: -5%;
 left: 10%;
+}
+
 }
 .google-map{
   width: 50%;
-  height: 500px;
-   margin-bottom: 50px;
+   margin-bottom: 5vh;
    position: absolute;
-   left: 5%;
+   left: 3%;
    top: 12%;
- }
+}
+
+ 
 
 .contacts__info{
    width: 35%;
  position: absolute;
-   right: 0;
+   right: 5%;
    top: 25%;
    text-align: right;
  font-weight: bold;
-  font-size: 25px;
+  font-size:1vh;
   font-style: normal;
   text-align: left;
   display: flex;
   flex-direction: column;
  
+ @media (min-width: 576px) { }
+
+@media (min-width: 768px) {  
+ 
+}
+@media (min-width: 992px) {  
+ 
+}
+@media (min-width: 1200px) {  
+ font-size:3vh;
+}
+
 }
 
 
 
 .contacts__phone {
   text-decoration: none;
-    margin-bottom: 50px;
+    margin-bottom: 7vh;
   color: #ffffff;
   text-transform: uppercase;
   
@@ -112,49 +139,64 @@ left: 10%;
 
 .contacts__email{
   text-decoration: none;
-    margin-bottom: 50px;
+    margin-bottom:7vh;
   color: #ffffff;
 
 }
 
 address{
-    margin-bottom: 50px;
+   margin-bottom:7vh;
   }
 
 .contacts__instagram{
   text-decoration: none;
-   margin-bottom: 50px;
+  margin-bottom:7vh;
   color: #ffffff;
 }
 .contacts__phone:hover {
-  transform: translateX(20px) scale(1.3);
+  transform: translateX(2vh) scale(1.3);
    }
 
 address:hover {
-   transform: translateX(27px) scale(1.3);
+   transform: translateX(2vh) scale(1.3);
 }
 
 .contacts__email:hover {
-  transform: translateX(15px) scale(1.2);
+  transform: translateX(2vh) scale(1.2);
    }
 
    .contacts__instagram:hover{
-transform: translateX(27px) scale(1.3);
+transform: translateX(2vh) scale(1.3);
    }
   
 
 .contacts__info-btn{
   background-color: #f7af89;
-  width: 300px;
-  height: 50px;
-  margin-bottom: 20px;
-  font-size: 18px;
+  width: 95%;
+  height: 5vh;
+  font-size: 1.7vh;
   text-transform: uppercase;
   font-weight: bold;
  color: #ffffff;
- box-shadow:14px 19px 20px 0px rgba(0,0,0,0.71);
--webkit-box-shadow:14px 19px 20px 0px rgba(0,0,0,0.71);
--moz-box-shadow:14px 19px 20px 0px rgba(0,0,0,0.71);
+   box-shadow:1.4vh 1.9vh 2vh 0px rgba(0,0,0,0.71);
+-webkit-box-shadow:1.4vh 1.9vh 2vh 0px rgba(0,0,0,0.71);
+-moz-box-shadow:1.4vh 1.9vh 2vh 0px rgba(0,0,0,0.71);
+cursor: pointer;
+@media (min-width: 576px) { }
+
+@media (min-width: 768px) {  
+ 
+}
+@media (min-width: 992px) {  
+ 
+}
+@media (min-width: 1200px) {  
+ width: 90%;
+  height: 8vh;
+  font-size: 3vh;
+}
+
+
 }
 .contacts__info-btn:hover{
 background-color: rgba(56, 90, 61, 0.796);
@@ -164,7 +206,7 @@ color: #ffffff;
 
 .сontacts__block-color{
   background-image: url(../assets/1.jpg);
-    width:40%;
+    width:45%;
     height: 185%;
     z-index: -1;
      position: absolute;
@@ -187,7 +229,7 @@ Vue.use(VueGoogleMaps, {
         libraries: 'places',
     },
 })
-const myMarker = { lat: 50.4741356, lng: 30.4452074 };
+const myMarker = { lat: 50.47423600110085, lng:30.446527213481392,  };
 export default {
   name: "the-contacts",
    components: {ShowModal},

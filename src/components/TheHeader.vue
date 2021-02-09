@@ -20,12 +20,6 @@
     <div class="nav">
       <ul class="nav__links-list">
         <li class="nav__link-item">
-          <a href="#" class="nav__link">Головна</a>
-        </li>
-        <li class="nav__link-item">
-          <a href="#about" class="nav__link">Про нас</a>
-        </li>
-        <li class="nav__link-item">
           <a href="#service" class="nav__link">Послуги</a>
         </li>
         <li class="nav__link-item">
@@ -48,9 +42,12 @@ export default {
 <style scoped lang="scss">
 .header{
   width: 100%;
- min-height: 100px;
-  height: 170px;
-}
+  height: 20vh;
+  
+ }
+
+
+
 .nav {
   background-color: rgba(0, 0, 0, 0.789);
   display: flex;
@@ -58,7 +55,8 @@ export default {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 30px;
+  height: 5vh;
+ padding: 0 1vh;
 }
 
 .nav__logo {
@@ -68,46 +66,117 @@ export default {
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-bottom: 3px;
+  margin-bottom: 0.3vh;
   width: 100%;
-  height: 135px;
+ height: 10vh;
+ padding: 0 1vh;
+@media (min-width: 576px) { }
+
+@media (min-width: 768px) {  
+ 
 }
+@media (min-width: 992px) {  
+ 
+}
+@media (min-width: 1200px) {  
+ height: 17vh;
+}
+
+
+}
+
 
 .nav__link-item {
   list-style: none;
   display: inline-flex;
-  margin-right: 50px;
+  margin-right: 2vh;
+  @media (min-width: 576px) { }
+
+@media (min-width: 768px) {  
+ 
 }
+@media (min-width: 992px) {  
+ 
+}
+@media (min-width: 1200px) {  
+ margin-right: 15vh;
+}
+
+}
+
+.nav__link-item:last-child{
+  margin-right: 0;
+}
+
 .nav__link:last-child {
   margin-right: 0;
   width: 100%;
 }
 .nav__links-list {
-  margin-top: 10px;
+  margin-top: 1vh;
   list-style: none;
   display: inline-flex;
-  font-size: 18px;
+  font-size: 1.5vh;
+  @media (min-width: 576px) { }
+
+@media (min-width: 768px) {  
+ 
+}
+@media (min-width: 992px) {  
+ 
+}
+@media (min-width: 1200px) {  
+  font-size: 3vh;
+}
+
+
 }
 
 .nav__logo-link {
   text-decoration: none;
-  font-size: 70px;
+  font-size:4vh;
   color: #ffffff;
   font-weight: bold;
-  margin-bottom: 1px;
-  margin-top: 10px;
-  padding: 10px;
- 
-}
+  margin-left: -25vh;
+ // Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {  }
 
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { font-size: 8vh;
+margin-bottom: 1vh;
+  margin-top: 1vh;
+  padding: 1vh; }
+
+}
 .nav__logo-link:hover {
   transform: scale(1.1);
 }
 .nav__logo_img {
-  max-height: 100px;
-  margin-right: -50px;
-  margin-left: -30px;
-  margin-top: 5px;
+ height: 6vh;
+  margin-right: -3vh;
+  margin-left: -3vh;
+  margin-top: 1vh;
+
+  @media (min-width: 576px) { }
+
+@media (min-width: 768px) {  
+ 
+}
+@media (min-width: 992px) {  
+ 
+}
+@media (min-width: 1200px) {  
+height: 14vh;
+  margin-right: -7vh;
+  margin-left: -5vh;
+  margin-top: 1vh;
+}
 }
 
 .nav__contacns {
@@ -117,20 +186,36 @@ export default {
   align-items: end;
   text-align: right;
   position: absolute;
-  right: 40px;
-  padding-right: 30px;
+ right: 0;
+  margin-right: 5vh;
   font-weight: bold;
+  font-size: 1.5vh;
+  
+  @media (min-width: 576px) { }
+
+@media (min-width: 768px) {  
+ 
+}
+@media (min-width: 992px) {  
+  margin-right: 20vh;
+}
+@media (min-width: 1200px) {  
+  right: 4vh;
+  padding-right: 7vh;
+}
+
+
 }
 
 a {
   text-decoration: none;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  margin-right:1vh;
+  margin-bottom: 1vh;
   color: #ffffff;
   text-transform: uppercase;
 }
 .nav__contacns a:hover {
-  transform: translateX(20px) scale(1.3);
+  transform: translateX(2vh) scale(1.3);
   }
 
 .nav__link:hover {
@@ -139,8 +224,8 @@ a {
 }
 
 address:hover {
-  transform:translateX(20px);
-  transform: translateX(27px) scale(1.3);
+  transform:translateX(2vh);
+  transform: translateX(2.5vh) scale(1.3);
 
 }
 </style>

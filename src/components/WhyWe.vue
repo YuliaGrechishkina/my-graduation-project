@@ -84,16 +84,28 @@
   
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .why_we {
-  height: 700px;
-  width: 100%;
+  height: 100vh;
+   width: 100%;
   display: flex;
-  flex-direction: row;
+ flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   position: relative;
+  @media (min-width: 576px) { }
+
+@media (min-width: 768px) {  
+ 
+}
+@media (min-width: 992px) {  
+ 
+}
+@media (min-width: 1200px) {  
+  flex-direction: row;
+}
+
 }
 
 .why_we__block-color {
@@ -103,12 +115,25 @@
   z-index: -1;
   position: absolute;
   right: 0;
+  top: 0;
+ @media (min-width: 576px) { 
+
+  }
+
+@media (min-width: 768px) {  
+ 
+}
+@media (min-width: 992px) {  
+ 
+}
+@media (min-width: 1200px) {  
   top: -30%;
+}
 }
 .why_we__about {
   background-image: url(../assets/1.jpg);
-  height: 100%;
-  width: 30%;
+  height: 38%;
+  width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -116,23 +141,49 @@
   flex-direction: column;
   justify-content: center;
   align-items:center;
+  @media (min-width: 576px) { 
+
+  }
+
+@media (min-width: 768px) {  
+ 
+}
+@media (min-width: 992px) {  
+ 
+}
+@media (min-width: 1200px) {  
+  width: 30%;height: 100%;
+}
+
 }
 
 .why_we__about-wrapper{
   background-color: rgba(100, 141, 92, 0.6);
   width: 80%;
-  margin-bottom: 10%;
+  margin-bottom: 4%;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  @media (min-width: 576px) { }
+
+@media (min-width: 768px) {  
+ 
+}
+@media (min-width: 992px) {  
+ 
+}
+@media (min-width: 1200px) {  
+  margin-bottom: 10%;
+}
+
 }
 
 .why_we__about-wrapper:hover{
    transform:  scale(1.2);
 }
 .why_we__picture {
-  height: 100%;
-  width: 40%;
+   height: 25%;
+  width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -140,7 +191,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
+    position: relative;
+  @media (min-width: 576px) { }
+
+@media (min-width: 768px) {  
+ 
+}
+@media (min-width: 992px) {  
+ 
+}
+@media (min-width: 1200px) {  
+  
+}
+
 }
 
 .why_we__title{
@@ -148,69 +211,134 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 65%;
-  height: 20%;
-color: #ffffff;
+ color: #ffffff;
 background-color: rgba(9, 26, 12, 0.796);
 line-height: 160%;
-font-size: 45px;
+font-size: 3vh;
 position: absolute;
-top: 10%;
-left: 5%;
+ width: 55%;
+  height: 20%;
+  top: 2%;
+left: 2%;
   z-index: 3;
-  padding: 10px;
+  padding: 1.5vh;
   text-transform: uppercase;
+  @media (min-width: 576px) { }
+
+@media (min-width: 768px) {  
+ 
+}
+@media (min-width: 992px) {  
+ 
+}
+@media (min-width: 1200px) {  
+  width: 65%;
+  height: 20%;
+  top: 10%;
+left: 5%;
+font-size: 5vh;
+}
+
 }
 
 .why_we__title:hover{
-  transform: translateX(10px) scale(1.1);
+  transform: scale(1.1);
 }
 .why_we__about-subtitle {
-  font-size: 25px;
+  font-size: 2.5vh;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-bottom: 1%;
+  margin-top: 1%;
+  text-transform: uppercase;
+  
+  @media (min-width: 576px) { }
+
+@media (min-width: 768px) {  
+ 
+}
+@media (min-width: 992px) {  
+ 
+}
+@media (min-width: 1200px) {  
+ font-size: 3.3vh;
   margin-left: 5%;
   margin-right: 5%;
-  margin-bottom: 20px;
-  text-transform: uppercase;
+  margin-bottom: 7vh;
   margin-top: 5%;
 }
 
+}
+
 .why_we__about-text {
-  font-size: 20px;
+  font-size: 2vh;
+  margin-left: 3%;
+  margin-bottom: 1%;
+  @media (min-width: 576px) { }
+
+@media (min-width: 768px) {  
+ 
+}
+@media (min-width: 992px) {  
+ 
+}
+@media (min-width: 1200px) {  
+  font-size: 2.2vh;
   margin-left: 5%;
   margin-bottom: 5%;
 }
 
-.why_we__info{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-background-color: rgba(9, 26, 12, 0.796);
-width: 80%;
-position: absolute;
-bottom: 12%;
-right: 5%;
-height: 20%;
 }
 
-  .why_we__img{
-    width: 95%;
+ .why_we__img{
+    width: 65%;
+    
+    @media (min-width: 576px) { }
+
+@media (min-width: 768px) {  
+ 
+}
+@media (min-width: 992px) {  
+ 
+}
+@media (min-width: 1200px) {  
+ width: 95%;
+}
+
   }
 
 .why_we__info-btn{
   background-color:  rgba(56, 90, 61, 0.796);
-  width: 400px;
-  height: 70px;
-  margin-bottom: 20px;
-  font-size: 26px;
+  width: 30vh;
+  height: 5vh;
+  margin-bottom: 1vh;
+  font-size: 2vh;
   text-transform: uppercase;
   font-weight: bold;
   position: absolute;
-  bottom: 10%;
-  color: #FFF;
-box-shadow:14px 19px 20px 0px rgba(0,0,0,0.71);
--webkit-box-shadow:14px 19px 20px 0px rgba(0,0,0,0.71);
--moz-box-shadow:14px 19px 20px 0px rgba(0,0,0,0.71);
+  bottom: 1%;
+  right: 3%;
+    color: #FFF;
+ box-shadow:1.4vh 1.9vh 2vh 0px rgba(0,0,0,0.71);
+-webkit-box-shadow:1.4vh 1.9vh 2vh 0px rgba(0,0,0,0.71);
+-moz-box-shadow:1.4vh 1.9vh 2vh 0px rgba(0,0,0,0.71);
+cursor: pointer;
+@media (min-width: 576px) { }
+
+@media (min-width: 768px) {  
+ 
+}
+@media (min-width: 992px) {  
+ 
+}
+@media (min-width: 1200px) {  
+ width: 50vh;
+  height: 10vh;
+  margin-bottom: 2vh;
+  font-size: 4vh;
+   bottom: 10%;
+}
+
 }
 .why_we__info-btn:hover{
 background-color:rgba(100, 141, 92, 0.9) ;

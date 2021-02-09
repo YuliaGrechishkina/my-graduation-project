@@ -8,7 +8,7 @@
        <VueSlickCarousel :arrows="true" 
                                 :dots="false" 
                                 :autoplay="true"
-                                :autoplaySpeed="2000"
+                                :autoplaySpeed="5000"
                                 :edgeFriction = "0.35"
                                 :speed = "500"
                                 :slidesToShow = "3"
@@ -136,10 +136,10 @@ data() {
 
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .works{
-height: 900px;
-    width: 100%;
+  height: 60vh;
+   width: 100%;
        display: flex;
     justify-content: center;
     align-items: center;
@@ -162,27 +162,57 @@ height: 900px;
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 40%;
+  width: 60%;
   height: 10%;
+  font-size: 3vh;
+  top:1%;
+left: 5%;
 color: #ffffff;
 background-color: rgba(9, 26, 12, 0.796);
-line-height: 160%;
-font-size: 60px;
 position: absolute;
-top:2%;
-left: 9.7%;
 text-transform: uppercase;
-font-size: 50px;
-z-index: 1;
+z-index: 5;
+@media (min-width: 576px) { }
+
+@media (min-width: 768px) {  
+ 
+}
+@media (min-width: 992px) {  
+ 
+}
+@media (min-width: 1200px) {  
+ width: 40%;
+  height: 10%;
+  font-size: 6vh;
+  top:2%;
+left: 9.7%;
+}
+
 }
 .works__carousel {
- width: 90%;height: 22em;
-  position: absolute;
-  top: 13%;
-   margin: auto;
-   left:50%;
+   position: absolute;
+    margin: auto;
+  overflow: fill;
+width: 80%;
+ height: 20vh; 
+ top: 13%;
+ left:50%;
 transform:translate(-50%, 0);
-overflow: fill;
+@media (min-width: 576px) { }
+
+@media (min-width: 768px) {  
+ 
+}
+@media (min-width: 992px) {  
+ 
+}
+@media (min-width: 1200px) {  
+ width: 90%;
+ height: 40vh; 
+ top: 13%;
+ left:50%;
+transform:translate(-50%, 0);
+}
 
    }
 
@@ -190,22 +220,46 @@ overflow: fill;
      width: 100%;
    }
    .works__img {
-height: 20em;
+height: 20vh;
 width:100%;
 object-fit:fill;
+@media (min-width: 576px) { }
+
+@media (min-width: 768px) {  
+ 
+}
+@media (min-width: 992px) {  
+ 
+}
+@media (min-width: 1200px) {  
+ height: 40vh;
+}
+
    }
 
 .works__block-color-sec{
   background-image: url(../assets/1.jpg);
-    width:40%;
-    height: 70%;
-    z-index: -1;
+      z-index: -1;
      position: absolute;
      left: 0;
-    top: 25%;
+   width:40%;
+    height: 70%; 
+    top: 15%;
       background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    @media (min-width: 576px) { }
+
+@media (min-width: 768px) {  
+ 
+}
+@media (min-width: 992px) {  
+ 
+}
+@media (min-width: 1200px) {  
+   top: 25%;
+}
+
 }
 
 .slick-slider[data-v-3d1a4f76]{
@@ -214,44 +268,63 @@ object-fit:fill;
   align-items: center;
 }
 
-.slick-prev:before, .slick-next:before{
- font-family: 'slick';
-    font-size: 70px;
-    line-height: 1;
-    opacity: 0.75;
-    color: white;
-    -webkit-font-smoothing: antialiased;
-}
-
 .reviews__title{
  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 40%;
-  height: 15%;
+  width: 70%;
+  height: 12%;
+  top:48%;
+right: 5%;
+font-size: 3vh;
 color: #ffffff;
 background-color: rgba(9, 26, 12, 0.796);
-line-height: 160%;
-font-size: 60px;
 position: absolute;
-top:50%;
-right: 9.7%;
 text-transform: uppercase;
-font-size: 45px;
-z-index: 1;
+z-index: 5;
+@media (min-width: 576px) { }
+
+@media (min-width: 768px) {  
+ 
+}
+@media (min-width: 992px) {  
+ 
+}
+@media (min-width: 1200px) {  
+  width: 40%;
+  height: 10%;
+  top:54%;
+right: 9.7%;
+font-size: 5vh;
+}
+
 }
 
 .reviews__carousel{
-  width: 90%;
-  height: 250px;
+  width: 80%;
+   height: 20vh; 
+  top: 62%;
   position: absolute;
-  top: 67%;
    margin: auto;
    left:50%;
 transform:translate(-50%, 0);
 overflow: fill;
 background-color: rgba(247, 175, 137, .796);
+@media (min-width: 576px) { }
+
+@media (min-width: 768px) {  
+ 
+}
+@media (min-width: 992px) {  
+ 
+}
+@media (min-width: 1200px) {  
+ height: 30vh; 
+  top: 65%;
+  width: 90%;
+}
+
 }
 .reviews__slide{
      width: 90%;
@@ -259,29 +332,55 @@ background-color: rgba(247, 175, 137, .796);
      flex-direction: column;
 justify-content: center;
 align-items: center;
-padding: 2% 5%;
+padding: 3% 5%;
    }
 
    .reviews__text{
-     margin-top: 15px;
-     font-size: 35px;
-     font-style: italic;
-     height: 100px;
-     width: 90%;
+        font-style: italic;
+          width: 90%;
+    font-size: 2vh;
+   height: 10vh;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
      padding-right: 20%;
      display: flex;
      justify-content: center;
      align-items: center;
-     margin-bottom: 40px;
-     text-align-last: left;
+      text-align-last: left;
       font-weight: bold;
+      @media (min-width: 576px) { }
+
+@media (min-width: 768px) {  
+ 
+}
+@media (min-width: 992px) {  
+ 
+}
+@media (min-width: 1200px) {  
+   font-size: 4.5vh;
+      margin-bottom: 5vh;
+     padding-right: 20%;
+}
+
       }
 
       .reviews__name{
-     font-size: 40px;
+     font-size: 3vh;
      font-weight: bold;
-     height: 50px;
+     height: 5vh;
      text-align: right;
      width: 90%;
+     @media (min-width: 576px) { }
+
+@media (min-width: 768px) {  
+ 
+}
+@media (min-width: 992px) {  
+ 
+}
+@media (min-width: 1200px) {  
+  font-size: 5vh;
+}
+
            }
 </style>

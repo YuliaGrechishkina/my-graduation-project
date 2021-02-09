@@ -6,13 +6,13 @@
         class="services__item"
         v-for="service in services"
         :key="service.id"
-        :style="{
-          backgroundImage: `url(${service.bgImg})`,
-        }"
+        :style="{           backgroundImage: `url(${service.bgImg})`,     }"
       >
+      <div class="cover">
         <p class="services__item-text">
           {{ service.title }}
         </p>
+        </div>
       </li>
         </ul>
 
@@ -23,7 +23,7 @@
         :key="service.id"
         :style="{
           backgroundImage: `url(${service.bgImgBack})`,
-        }"
+                  }"
       >
         <p class="services__item-back-text">
           {{ service.service1 }}
@@ -56,13 +56,27 @@
 
 <style scoped lang="scss">
 .services {
-  height: 760px;
+height: 72vh;
   width: 100%;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 5vh;
+   @media (min-width: 576px) { 
+    
+  }
+
+@media (min-width: 768px) {  
+ 
+}
+@media (min-width: 992px) {  
+ 
+}
+@media (min-width: 1200px) {   
+  height: 105vh;
+  top: -30%;
+}
 }
 .services__block-color {
   background-color: #f7af89;
@@ -88,13 +102,13 @@
 }
 
 .services__galery-list{
-z-index: 1;
+z-index: 10;
 }
 
 .services__item {
-  height: 250px;
+  height: 25vh;
   width: 30%;
-  margin: 2px;
+  margin: 0.3vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,12 +116,40 @@ z-index: 1;
   background-position: center;
   background-size: cover;
   text-align: center;
-  cursor: pointer;
+  position: relative;
+z-index: 5;
+  @media (min-width: 576px) { }
+
+@media (min-width: 768px) {  
+ 
+}
+@media (min-width: 992px) {  
+ 
+}
+@media (min-width: 1200px) {  
+ height: 35vh;
+  
+}
+ 
+}
+
+.cover{
+background: rgba(0, 0, 0, 0.25);
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0; 
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 .services__item-back {
-   height: 250px;
+  height: 25vh;
   width: 30%;
-  margin: 2px;
+  margin: 0.3vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,34 +159,63 @@ z-index: 1;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  cursor: pointer;
-  }
+ @media (min-width: 576px) { }
 
-.services__item-title {
-  font-size: 40px;
-  font-weight: normal;
-  text-transform: uppercase;
-  color: #275c4a;
+@media (min-width: 768px) {  
+ 
+}
+@media (min-width: 992px) {  
+ 
+}
+@media (min-width: 1200px) {  
+ height: 35vh;
 }
 
+  }
+
+
+
 .services__item-text {
-  font-size: 35px;
+  font-size: 2vh;
   font-weight: bold;
   text-transform: uppercase;
   color: #275c4a;
-  background-color: rgba(233, 243, 231, 0.5);
+  background-color: rgba(233, 243, 231, 0.6);
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 1vh;
+  @media (min-width: 576px) { }
+
+@media (min-width: 768px) {  
+ 
+}
+@media (min-width: 992px) {  
+ 
+}
+@media (min-width: 1200px) {  
+  font-size: 4vh;
+}
+
 }
 
 .services__item-back-text {
-  font-size: 17px;
+  font-size: 1vh;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
   color: #275c4a;
   margin-bottom: 3px;
    background-color: rgba(233, 243, 231, 0.8);
+    @media (min-width: 576px) { }
+
+@media (min-width: 768px) {  
+ 
+}
+@media (min-width: 992px) {  
+ 
+}
+@media (min-width: 1200px) {  
+  font-size: 2vh;
+}
 }
 
 
@@ -187,7 +258,7 @@ z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 50px;
+  font-size: 8vh;
   position: absolute;
   bottom: 7%;
   right: 0;

@@ -11,13 +11,14 @@
 
 <style scoped>
 .footer{
-     height: 100px;
-    width: 100%;
+     height: 15vh;
+   width: 100%;
 background-color: #000;
 display: flex;
 flex-direction:row;
 justify-content: center;
 align-items: center;
+
 }
 .footer__logo {
   background-color: #000000;
@@ -26,25 +27,24 @@ align-items: center;
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-bottom: 3px;
+  margin-bottom: 0.5vh;
   width: 100%;
   height: 100%;
 }
 .footer__logo-link {
   text-decoration: none;
-  font-size: 65px;
+  font-size: 7vh;
   color: #ffffff;
   font-weight: bold;
-  margin-bottom: 1px;
-  margin-top: 10px;
-  padding: 10px;
- }
+  margin-bottom: 1vh;
+  margin-top: 1vh;
+   }
 
 .footer__logo_img {
-  height: 80px;
-  margin-right: -40px;
-  margin-left: -30px;
-  margin-top: 5px;
+  height: 11vh;
+  margin-right: -5.5vh;
+  margin-left: -4.5vh;
+  margin-top: 1vh;
 }
 .footer__logo-link:hover {
   transform: scale(1.1);
