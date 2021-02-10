@@ -8,7 +8,7 @@
           <div>
             <GmapMap
               :center="center"
-              :zoom="15" map-type-id="roadmap" style="width: 100%; height: 550px;">
+              :zoom="15" map-type-id="roadmap" style="width: 100%; height: 550px">
               <GmapMarker 
                 :key="index" v-for="(m, index) in markers"
                 :position="m.position"
