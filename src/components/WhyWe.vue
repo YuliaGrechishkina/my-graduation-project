@@ -100,10 +100,11 @@
  
 }
 @media (min-width: 992px) {  
- 
+ flex-direction: row;
+ height: 70vh;
 }
 @media (min-width: 1200px) {  
-  flex-direction: row;
+  height: 100vh;
 }
 
 }
@@ -121,13 +122,13 @@
   }
 
 @media (min-width: 768px) {  
- 
+ top: -30%;
 }
 @media (min-width: 992px) {  
  
 }
 @media (min-width: 1200px) {  
-  top: -30%;
+  
 }
 }
 .why_we__about {
@@ -149,7 +150,7 @@
  
 }
 @media (min-width: 992px) {  
- 
+ width: 30%;height: 100%;
 }
 @media (min-width: 1200px) {  
   width: 30%;height: 100%;
@@ -170,10 +171,10 @@
  
 }
 @media (min-width: 992px) {  
- 
+ margin-bottom: 10%;
 }
 @media (min-width: 1200px) {  
-  margin-bottom: 10%;
+  
 }
 
 }
@@ -195,13 +196,16 @@
   @media (min-width: 576px) { }
 
 @media (min-width: 768px) {  
- 
+  height: 30%;
+  width: 60%;
 }
 @media (min-width: 992px) {  
- 
+  height: 30%;
+  width: 40%;
 }
 @media (min-width: 1200px) {  
-  
+   height: 30%;
+  width: 40%;
 }
 
 }
@@ -226,17 +230,22 @@ left: 2%;
   @media (min-width: 576px) { }
 
 @media (min-width: 768px) {  
- 
+width: 65%;
+  height: 10%;
+  top: 0;
+left: -20%;
+font-size: 2.5vh; 
 }
 @media (min-width: 992px) {  
- 
+ font-size: 2,5vh;  width: 80%;
+  height: 20%;
+  top: -100%;
+left: 5%;
+
 }
 @media (min-width: 1200px) {  
-  width: 65%;
-  height: 20%;
-  top: 10%;
-left: 5%;
-font-size: 5vh;
+ font-size: 5vh;  width: 65%;
+  height: 35%;
 }
 
 }
@@ -255,10 +264,14 @@ font-size: 5vh;
   @media (min-width: 576px) { }
 
 @media (min-width: 768px) {  
- 
+
 }
 @media (min-width: 992px) {  
- 
+ font-size: 1.7vh;
+  margin-left: 5%;
+  margin-right: 1%;
+  margin-bottom: 2.5vh;
+  margin-top: 5%;
 }
 @media (min-width: 1200px) {  
  font-size: 3.3vh;
@@ -280,7 +293,8 @@ font-size: 5vh;
  
 }
 @media (min-width: 992px) {  
- 
+ font-size: 1.7vh;
+  margin-bottom: 5%;
 }
 @media (min-width: 1200px) {  
   font-size: 2.2vh;
@@ -293,16 +307,32 @@ font-size: 5vh;
  .why_we__img{
     width: 65%;
     
-    @media (min-width: 576px) { }
+    @media (min-width: 576px) { 
+      width: 45%;
+   }
 
-@media (min-width: 768px) {  
- 
+@media (min-width: 768px) { 
+  position: absolute;
+  top: 10%; 
+
+  height: 20vh; 
+ width: auto;
+ left: 0%;
 }
 @media (min-width: 992px) {  
- 
+   position: absolute;
+  top: -15%;
+min-width:90%;
+ max-width: 95%;
+min-height: 130%;
+ left: 2%;
 }
 @media (min-width: 1200px) {  
- width: 95%;
+  position: absolute;
+  top: -50%; 
+ min-width:90%;
+ max-width: 95%;
+min-height: 120%;
 }
 
   }
@@ -326,17 +356,27 @@ cursor: pointer;
 @media (min-width: 576px) { }
 
 @media (min-width: 768px) {  
- 
+ width: 25vh;
+  height: 5vh;
+  margin-bottom: 2vh;
+  font-size: 2vh;
+   bottom: 35%;
+  right: -20%;
 }
 @media (min-width: 992px) {  
- 
+ width: 25vh;
+  height: 5vh;
+  margin-bottom: 2vh;
+  font-size: 2vh;
+   bottom: -75%;
+   right: 7%;
 }
 @media (min-width: 1200px) {  
  width: 50vh;
   height: 10vh;
   margin-bottom: 2vh;
   font-size: 4vh;
-   bottom: 10%;
+   bottom: -35%;
 }
 
 }

@@ -9,7 +9,7 @@
     </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .footer{
      height: 15vh;
    width: 100%;
@@ -18,6 +18,17 @@ display: flex;
 flex-direction:row;
 justify-content: center;
 align-items: center;
+@media (min-width: 576px) { }
+
+@media (min-width: 768px) {  
+    padding-bottom:0;
+}
+@media (min-width: 992px) {  
+ 
+}
+@media (min-width: 1200px) {  
+ 
+}
 
 }
 .footer__logo {

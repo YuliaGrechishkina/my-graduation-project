@@ -176,7 +176,7 @@ align-items: center;
 
 
 .services__item-text {
-  font-size: 2vh;
+  font-size: 1.3vh;
   font-weight: bold;
   text-transform: uppercase;
   color: #275c4a;
@@ -186,7 +186,7 @@ align-items: center;
   @media (min-width: 576px) { }
 
 @media (min-width: 768px) {  
- 
+ font-size: 2vh;
 }
 @media (min-width: 992px) {  
  
@@ -250,18 +250,18 @@ align-items: center;
 
 .btn_up{
   background-color: rgba(9, 26, 12, 0.796);
-  z-index: 5;
-  width: 5%;
-  height: 7%;
+  z-index: 50;
+  width: 7%;
+  height: 5%;
   text-decoration: none;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 8vh;
+  font-size: 5vh;
   position: absolute;
-  bottom: 7%;
-  right: 0;
+  bottom: 5%;
+  right: 5%;
   position: fixed;
 }
 .btn_up:hover{

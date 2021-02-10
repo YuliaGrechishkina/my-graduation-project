@@ -8,7 +8,7 @@
           <div>
             <GmapMap
               :center="center"
-              :zoom="15" map-type-id="roadmap" style="width: 100%; height: 550px">
+              :zoom="15" map-type-id="roadmap" style="width: 100%; height: 550px;">
               <GmapMarker 
                 :key="index" v-for="(m, index) in markers"
                 :position="m.position"
@@ -55,6 +55,15 @@
  width: 100%;
 position: relative;
 height: 90vh; 
+@media (min-width: 768px) {  
+ height: 60vh; 
+}
+@media (min-width: 992px) {  
+ height: 60vh; 
+}
+@media (min-width: 1200px) {  
+ height: 90vh; 
+}
   }
 
 .сontacts__title {
@@ -75,10 +84,16 @@ left: 5%;
 @media (min-width: 576px) { }
 
 @media (min-width: 768px) {  
- 
+ width: 55%;
+  height: 10%;
+  font-size: 3vh;
+  margin-bottom: 2vh;
+  top: -12%;
+left: 7%;
 }
 @media (min-width: 992px) {  
- 
+  top: -40%;
+  height: 20%;
 }
 @media (min-width: 1200px) {  
   width: 40%;
@@ -96,6 +111,21 @@ left: 10%;
    position: absolute;
    left: 3%;
    top: 12%;
+    @media (min-width: 576px) { }
+
+@media (min-width: 768px) {  
+  left: 5%;
+   top: 4%;
+}
+@media (min-width: 992px) {  
+  left: 3%;
+   top: -7%;
+   
+}
+@media (min-width: 1200px) {  
+ left: 3%;
+   top: 12%;
+}
 }
 
  
@@ -116,13 +146,15 @@ left: 10%;
  @media (min-width: 576px) { }
 
 @media (min-width: 768px) {  
- 
+
 }
 @media (min-width: 992px) {  
- 
+ font-size:2.2vh;
+ top: 0;
 }
 @media (min-width: 1200px) {  
  font-size:3vh;
+  top: 25%;
 }
 
 }
@@ -134,18 +166,34 @@ left: 10%;
     margin-bottom: 7vh;
   color: #ffffff;
   text-transform: uppercase;
-  
+ @media (min-width: 992px) {  
+  margin-bottom: 6vh;
+}
+@media (min-width: 1200px) {  
+  margin-bottom: 7vh;
+} 
 }
 
 .contacts__email{
   text-decoration: none;
     margin-bottom:7vh;
   color: #ffffff;
-
+@media (min-width: 992px) {  
+  margin-bottom: 6vh;
+}
+@media (min-width: 1200px) {  
+  margin-bottom: 7vh;
+}
 }
 
 address{
    margin-bottom:7vh;
+   @media (min-width: 992px) {  
+  margin-bottom: 6vh;
+}
+@media (min-width: 1200px) {  
+  margin-bottom: 7vh;
+}
   }
 
 .contacts__instagram{
@@ -185,10 +233,14 @@ cursor: pointer;
 @media (min-width: 576px) { }
 
 @media (min-width: 768px) {  
- 
+ width: 70%;
+  height: 5vh;
+  font-size: 1.5vh;
 }
 @media (min-width: 992px) {  
- 
+ width: 90%;
+  height: 6vh;
+  font-size: 2vh;
 }
 @media (min-width: 1200px) {  
  width: 90%;
@@ -207,11 +259,11 @@ color: #ffffff;
 .сontacts__block-color{
   background-image: url(../assets/1.jpg);
     width:45%;
-    height: 185%;
+    height: 145%;
     z-index: -1;
      position: absolute;
      right: 0;
-    top:-85%;
+    top:-45%;
       background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

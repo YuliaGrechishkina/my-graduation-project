@@ -145,6 +145,15 @@ data() {
     align-items: center;
  flex-direction: column;
  position: relative;
+ @media (min-width: 768px) {  
+ height: 80vh;
+}
+@media (min-width: 992px) {  
+ height: 100vh;
+}
+@media (min-width: 1200px) {  
+ 
+}
 }
 
 .works__block-color{
@@ -175,10 +184,14 @@ z-index: 5;
 @media (min-width: 576px) { }
 
 @media (min-width: 768px) {  
- 
+
 }
 @media (min-width: 992px) {  
- 
+  width: 40%;
+  height: 10%;
+  font-size: 4vh;
+  top:2%;
+left: 9.7%;
 }
 @media (min-width: 1200px) {  
  width: 40%;
@@ -201,17 +214,19 @@ transform:translate(-50%, 0);
 @media (min-width: 576px) { }
 
 @media (min-width: 768px) {  
- 
+  width: 75%;
+ height: 40vh; 
+ left:47%;
 }
 @media (min-width: 992px) {  
- 
-}
-@media (min-width: 1200px) {  
  width: 90%;
  height: 40vh; 
  top: 13%;
  left:50%;
 transform:translate(-50%, 0);
+}
+@media (min-width: 1200px) {  
+ 
 }
 
    }
@@ -226,13 +241,13 @@ object-fit:fill;
 @media (min-width: 576px) { }
 
 @media (min-width: 768px) {  
- 
+  height: 25vh;
 }
 @media (min-width: 992px) {  
- 
+  height: 30vh;
 }
 @media (min-width: 1200px) {  
- height: 40vh;
+height: 40vh;
 }
 
    }
@@ -251,13 +266,13 @@ object-fit:fill;
     @media (min-width: 576px) { }
 
 @media (min-width: 768px) {  
- 
+  
 }
 @media (min-width: 992px) {  
- 
+ top: 25%;
 }
 @media (min-width: 1200px) {  
-   top: 25%;
+  
 }
 
 }
@@ -286,14 +301,23 @@ z-index: 5;
 @media (min-width: 576px) { }
 
 @media (min-width: 768px) {  
- 
+ width: 65%;
+  height: 10%;
+  top:48%;
+right: 11%;
+font-size: 3vh;
 }
 @media (min-width: 992px) {  
- 
+ width: 65%;
+  height: 10%;
+  top:45%;
+right: 8%;
+font-size: 3vh;
 }
 @media (min-width: 1200px) {  
-  width: 40%;
-  height: 10%;
+  width: 45%;
+  min-height: 10%;
+  max-height: 15%;
   top:54%;
 right: 9.7%;
 font-size: 5vh;
@@ -314,10 +338,15 @@ background-color: rgba(247, 175, 137, .796);
 @media (min-width: 576px) { }
 
 @media (min-width: 768px) {  
- 
+   top: 60%;
+    width: 75%;
+ height: 22.5vh; 
+ left:47%;
 }
 @media (min-width: 992px) {  
- 
+ width: 90%;
+ left: 50%;
+ top: 57%;
 }
 @media (min-width: 1200px) {  
  height: 30vh; 

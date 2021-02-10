@@ -123,7 +123,7 @@ export default {
  
 }
 @media (min-width: 992px) {  
- 
+ font-size: 2vh;
 }
 @media (min-width: 1200px) {  
   font-size: 3vh;
@@ -145,13 +145,14 @@ export default {
 @media (min-width: 768px) {  }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {  }
+@media (min-width: 992px) { 
+    }
 
 // X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { font-size: 8vh;
-margin-bottom: 1vh;
+@media (min-width: 1200px) { font-size: 8vh;margin-bottom: 1vh;
   margin-top: 1vh;
-  padding: 1vh; }
+  padding: 1vh;
+}
 
 }
 .nav__logo-link:hover {
@@ -194,14 +195,16 @@ height: 14vh;
   @media (min-width: 576px) { }
 
 @media (min-width: 768px) {  
- 
+  margin-right: 15vh;
 }
 @media (min-width: 992px) {  
-  margin-right: 20vh;
+ 
 }
 @media (min-width: 1200px) {  
-  right: 4vh;
+   right: 4vh;
   padding-right: 7vh;
+  margin-right: 20vh;
+  font-size: 3vh
 }
 
 
