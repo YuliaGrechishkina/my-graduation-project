@@ -5,7 +5,7 @@
     <OurServices />
     <WhyWe />
     <OurWorks />
-   
+   <TheReviews />
     <TheContacts />
     <TheFooter />
   </div>
@@ -17,6 +17,7 @@ import AboutUs from "@/components/AboutUs.vue";
 import OurServices from "@/components/OurServices.vue";
 import WhyWe from "@/components/WhyWe.vue";
 import OurWorks from "@/components/OurWorks.vue";
+import TheReviews from "@/components/TheReviews.vue";
 import TheContacts from "@/components/TheContacts.vue";
 import TheFooter from "@/components/TheFooter.vue";
 
@@ -28,7 +29,7 @@ export default {
     OurServices,
     WhyWe,
     OurWorks,
-    
+    TheReviews,
     TheContacts,
     TheFooter,
   },

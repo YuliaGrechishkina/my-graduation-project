@@ -56,7 +56,7 @@ export default {
   align-items: center;
   width: 100%;
   height: 5vh;
- padding: 0 1vh;
+
 }
 
 .nav__logo {
@@ -69,7 +69,7 @@ export default {
   margin-bottom: 0.3vh;
   width: 100%;
  height: 10vh;
- padding: 0 1vh;
+ 
 @media (min-width: 576px) { }
 
 @media (min-width: 768px) {  

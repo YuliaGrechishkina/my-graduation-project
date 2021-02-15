@@ -250,9 +250,6 @@ left: 5%;
 
 }
 
-.why_we__title:hover{
-  transform: scale(1.1);
-}
 .why_we__about-subtitle {
   font-size: 2.5vh;
   margin-left: 1%;

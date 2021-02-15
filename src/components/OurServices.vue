@@ -102,7 +102,7 @@ height: 72vh;
 }
 
 .services__galery-list{
-z-index: 10;
+z-index: 1;
 }
 
 .services__item {
@@ -117,7 +117,7 @@ z-index: 10;
   background-size: cover;
   text-align: center;
   position: relative;
-z-index: 5;
+z-index: 1;
   @media (min-width: 576px) { }
 
 @media (min-width: 768px) {  
@@ -270,124 +270,13 @@ align-items: center;
 </style>
 
 <script>
+import {services} from "./data";
 export default {
   name: "our-services",
 
   data() {
     return {
-      services: [
-        {
-          id: 0,
-          title: "наші послуги",
-          bgImg: require("@/assets/1.jpg"),
-          bgImgBack: require("@/assets/all.jpg"),
-          service1:
-            "на нашій території Ви можете отримати весь спектр послуг для здоров'я і краси.       ",
-          service2: "Ласкаво просимо на YUG!",
-          service3: "",
-          service4: "",
-          service5: "",
-        },
-
-        {
-          id: 1,
-          title: "перукарське містецтво",
-          bgImg: require("@/assets/volos.jpg"),
-          bgImgBack: require("@/assets/3.jpg"),
-          service1: "стрижки",
-          service2: "укладання",
-          service3: "фарбування",
-          service4: "відновлення волосся",
-          service5: "нарощування",
-        },
-
-        {
-          id: 2,
-          title: "косметологія",
-          bgImg: require("@/assets/kosmetologia.jpg"),
-          bgImgBack: require("@/assets/3.jpg"),
-          service1: "чистка обличчя",
-          service2: "доглядові процедури",
-          service3: "фотоомолодження",
-          service4: "карбоксітерапія",
-          service5: "карбоновий пілінг",
-        },
-
-        {
-          id: 3,
-          title: "ручки",
-          bgImg: require("@/assets/manikur.jpg"),
-          bgImgBack: require("@/assets/3.jpg"),
-          service1: "Покриття гель-лак",
-          service2: "Нарощування нігтів",
-          service3: "парафінотерапія",
-          service4: "корекція нігтів",
-          service5: "",
-        },
-
-        {
-          id: 4,
-          title: "ніжки",
-          bgImg: require("@/assets/pedikur.jpg"),
-          bgImgBack: require("@/assets/3.jpg"),
-          service1: "Покриття гель-лак",
-          service2: "корекція нігтів",
-          service3: "SPA догляд",
-          service4: "парафінотерапія",
-          service5: "",
-        },
-
-        {
-          id: 5,
-          title: "тіло",
-          bgImg: require("@/assets/massag.jpg"),
-          bgImgBack: require("@/assets/3.jpg"),
-          service1: "усі види масажу",
-          service2: "коррекція фігури",
-          service3: "SPA догляд",
-          service4: "Скрабування, ",
-          service5: " зволоження",
-           service6: " та Обгортання ",
-            service7: "  за типом шкіри",
-        },
-
-{
-          id: 6,
-          title: "татуаж",
-          bgImg: require("@/assets/tatuag.jpg"),
-          bgImgBack: require("@/assets/3.jpg"),
-          service1: "ТАТУАЖ БРІВ",
-          service2: "ПУДРОВІ БРОВИ",
-          service3: "МІКРОБЛЕЙДИНГ БРІВ",
-          service4: "МІКРОБЛЕЙДИНГ БРІВ ",
-          service5: "ТАТУАЖ ПОВІК",
-        },
-
-{
-          id: 7,
-          title: "вії",
-          bgImg: require("@/assets/brovi.jpg"),
-          bgImgBack: require("@/assets/3.jpg"),
-          service1: "Класичне ",
-          service2: "нарощування вій",
-          service3: "2D, 3D ",
-          service4: "нарощування вій",
-          service5: "ламінування",
-        },
-
-{
-          id: 8,
-          title: "депіляція",
-          bgImg: require("@/assets/depilacia.jpg"),
-          bgImgBack: require("@/assets/3.jpg"),
-          service1: "шугарінг",
-          service2: "воскова епіляція",
-          service3: "лазерна депіляція",
-          service4: "",
-          service5: "",
-        },
-
-      ],
+      services
     };
   },
 };

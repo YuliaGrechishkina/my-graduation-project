@@ -235,11 +235,6 @@ margin: auto;
 
 }
 
-&__info-title:hover{
-  transform: scale(1.1);
-}
-
-
 &__info-btn{
   cursor: pointer;
   background-color: #f7af89;

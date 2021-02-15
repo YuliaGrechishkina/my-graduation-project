@@ -33,7 +33,7 @@
    <i class="fas fa-at"></i> yug.territoriya.krasoty@gmail.com
    </a>
 
-  <a href="https://www.instagram.com/yug.territoriya.krasoty/" class="contacts__instagram"> 
+  <a href="https://www.instagram.com/yug.territoriya.krasoty/" class="contacts__instagram" target="_blank"> 
   <i class="fab fa-instagram"></i> yug.territoriya.krasoty </a>
 
    <button class="contacts__info-btn" id="show-modal" @click="showModal">
@@ -55,6 +55,9 @@
  width: 100%;
 position: relative;
 height: 90vh; 
+display: flex;
+flex-direction: row;
+justify-content: space-around;
 @media (min-width: 768px) {  
  height: 60vh; 
 }
@@ -65,7 +68,6 @@ height: 90vh;
  height: 90vh; 
 }
   }
-
 .сontacts__title {
   display: flex;
   justify-content: center;
@@ -79,20 +81,20 @@ position: absolute;
   height: 10%;
   font-size: 3vh;
   margin-bottom: 2vh;
-  top: 0;
+  top: -10%;
 left: 5%;
+z-index: 1;
 @media (min-width: 576px) { }
-
 @media (min-width: 768px) {  
  width: 55%;
   height: 10%;
   font-size: 3vh;
   margin-bottom: 2vh;
-  top: -12%;
+  top: 0;
 left: 7%;
 }
 @media (min-width: 992px) {  
-  top: -40%;
+  top: 0;
   height: 20%;
 }
 @media (min-width: 1200px) {  
@@ -100,102 +102,82 @@ left: 7%;
   height: 15%;
   font-size: 5.5vh;
   margin-bottom: 2vh;
-  top: -5%;
+  top: 0;
 left: 10%;
 }
-
 }
 .google-map{
   width: 50%;
-   margin-bottom: 5vh;
-   position: absolute;
-   left: 3%;
-   top: 12%;
+   
+  
     @media (min-width: 576px) { }
-
 @media (min-width: 768px) {  
-  left: 5%;
-   top: 4%;
+ 
 }
 @media (min-width: 992px) {  
-  left: 3%;
-   top: -7%;
-   
+ 
+   margin-top: 5%;
 }
 @media (min-width: 1200px) {  
- left: 3%;
-   top: 12%;
+ margin-top: 10%;
 }
 }
-
  
-
 .contacts__info{
    width: 35%;
- position: absolute;
-   right: 5%;
-   top: 25%;
-   text-align: right;
+  text-align: right;
  font-weight: bold;
   font-size:1vh;
   font-style: normal;
   text-align: left;
   display: flex;
   flex-direction: column;
- 
+ align-items: left;
+ margin-top: 20%;
  @media (min-width: 576px) { }
-
 @media (min-width: 768px) {  
-
 }
 @media (min-width: 992px) {  
- font-size:2.2vh;
- top: 0;
+ font-size:1.5vh;
+ margin-top: 20%;
 }
 @media (min-width: 1200px) {  
  font-size:3vh;
-  top: 25%;
+ 
 }
-
 }
-
-
-
 .contacts__phone {
   text-decoration: none;
     margin-bottom: 7vh;
   color: #ffffff;
   text-transform: uppercase;
  @media (min-width: 992px) {  
-  margin-bottom: 6vh;
+  margin-bottom: 5vh;
 }
 @media (min-width: 1200px) {  
   margin-bottom: 7vh;
 } 
 }
-
 .contacts__email{
   text-decoration: none;
     margin-bottom:7vh;
   color: #ffffff;
 @media (min-width: 992px) {  
-  margin-bottom: 6vh;
+  margin-bottom: 5vh;
 }
 @media (min-width: 1200px) {  
   margin-bottom: 7vh;
 }
 }
-
 address{
    margin-bottom:7vh;
    @media (min-width: 992px) {  
-  margin-bottom: 6vh;
+  margin-bottom: 5vh;
 }
 @media (min-width: 1200px) {  
   margin-bottom: 7vh;
 }
   }
-
 .contacts__instagram{
   text-decoration: none;
   margin-bottom:7vh;
@@ -204,20 +186,16 @@ address{
 .contacts__phone:hover {
   transform: translateX(2vh) scale(1.3);
    }
-
 address:hover {
    transform: translateX(2vh) scale(1.3);
 }
-
 .contacts__email:hover {
   transform: translateX(2vh) scale(1.2);
    }
-
    .contacts__instagram:hover{
 transform: translateX(2vh) scale(1.3);
    }
   
-
 .contacts__info-btn{
   background-color: #f7af89;
   width: 95%;
@@ -231,7 +209,6 @@ transform: translateX(2vh) scale(1.3);
 -moz-box-shadow:1.4vh 1.9vh 2vh 0px rgba(0,0,0,0.71);
 cursor: pointer;
 @media (min-width: 576px) { }
-
 @media (min-width: 768px) {  
  width: 70%;
   height: 5vh;
@@ -247,28 +224,30 @@ cursor: pointer;
   height: 8vh;
   font-size: 3vh;
 }
-
-
 }
 .contacts__info-btn:hover{
 background-color: rgba(56, 90, 61, 0.796);
 transform:  scale(1.3); 
 color: #ffffff;
 }
-
 .сontacts__block-color{
   background-image: url(../assets/1.jpg);
     width:45%;
-    height: 145%;
+    height: 150%;
     z-index: -1;
      position: absolute;
      right: 0;
-    top:-45%;
+    top:-55%;
       background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    @media (min-width: 992px){
+      height: 160%
+    }
+    @media (min-width: 1400px) {
+height: 155%;
+  }
 }
-
 </style>
 
 <script>
