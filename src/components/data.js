@@ -80,7 +80,7 @@ export const services = [{
         service1: "ТАТУАЖ БРІВ",
         service2: "ПУДРОВІ БРОВИ",
         service3: "МІКРОБЛЕЙДИНГ БРІВ",
-        service4: "МІКРОБЛЕЙДИНГ БРІВ ",
+        service4: "МТАТУАЖ губ ",
         service5: "ТАТУАЖ ПОВІК",
     },
 
@@ -98,12 +98,12 @@ export const services = [{
 
     {
         id: 8,
-        title: "депіляція",
+        title: "епіляція",
         bgImg: require("@/assets/depilacia.jpg"),
         bgImgBack: require("@/assets/3.jpg"),
         service1: "шугарінг",
         service2: "воскова епіляція",
-        service3: "лазерна депіляція",
+        service3: "лазерна епіляція",
         service4: "",
         service5: "",
     },

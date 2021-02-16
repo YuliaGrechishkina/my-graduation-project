@@ -38,11 +38,9 @@
       </h1>
       <img src="@/assets/we.jpg" alt="" class="why_we__img" />
 
-      <button class="why_we__info-btn" id="show-modal" @click="showModal">запис он-лайн</button>
+      <button class="why_we__info-btn" id="show-modal" @click="showModal" data-booking-btn>запис он-лайн</button>
       
-      <ShowModal  v-show="isModalVisible"
-      @close="closeModal">
-            </ShowModal>
+      
          </div>
     
     <div class="why_we__about why_we__about-sec ">
@@ -335,7 +333,7 @@ min-height: 120%;
   }
 
 .why_we__info-btn{
-  background-color:  rgba(56, 90, 61, 0.796);
+  background-color:  #385a3dcb;
   width: 30vh;
   height: 5vh;
   margin-bottom: 1vh;
@@ -384,10 +382,10 @@ transform:  scale(1.3);
 </style>
 
 <script>
-import ShowModal from "@/components/ShowModal.vue";
+
 export default {
   name: "why-we",
-  components: {ShowModal},
+  components: {},
   data() {
     return {
       isModalVisible: false,

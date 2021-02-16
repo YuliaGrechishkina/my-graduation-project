@@ -12,14 +12,9 @@
 YUG запрошує вас до себе в гості, на територію здоров'я та краси. Стрижка, укладка, фарбування, манікюр, педикюр, оформлення брів, масаж, косметологічні процедури - все це чекає саме Вас.
      </p>
      
- <button class="about__info-btn" id="show-modal" @click="showModal">запис он-лайн</button>
-      
-      <ShowModal  v-show="isModalVisible"
-      @close="closeModal">
-     
+ <button class="about__info-btn" id="show-modal" @click="showModal" data-booking-btn>запис он-лайн</button>
       
       
-      </ShowModal>
          </div>
         
 
@@ -33,10 +28,10 @@ YUG запрошує вас до себе в гості, на територію
 </template>
 
 <script>
-import ShowModal from "@/components/ShowModal.vue";
+
 export default {
   name: 'about-us',
-  components: {ShowModal},
+  components: {},
  data() {
     return {
       isModalVisible: false,

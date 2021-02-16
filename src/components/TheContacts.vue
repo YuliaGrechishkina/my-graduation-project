@@ -36,16 +36,10 @@
   <a href="https://www.instagram.com/yug.territoriya.krasoty/" class="contacts__instagram" target="_blank"> 
   <i class="fab fa-instagram"></i> yug.territoriya.krasoty </a>
 
-   <button class="contacts__info-btn" id="show-modal" @click="showModal">
+   <button class="contacts__info-btn" id="show-modal" @click="showModal"  data-booking-btn>
 запис он-лайн
      </button>
-      <ShowModal  v-show="isModalVisible"
-      @close="closeModal">
-     
-      
-      
-      </ShowModal>
-    </div> 
+          </div> 
     <div class="сontacts__block-color">
         </div>
   </div>
@@ -143,19 +137,19 @@ left: 10%;
 }
 @media (min-width: 1200px) {  
  font-size:3vh;
- 
+ margin-top: 12%;
 }
 }
 .contacts__phone {
   text-decoration: none;
-    margin-bottom: 7vh;
+    margin-bottom: 6vh;
   color: #ffffff;
   text-transform: uppercase;
  @media (min-width: 992px) {  
   margin-bottom: 5vh;
 }
 @media (min-width: 1200px) {  
-  margin-bottom: 7vh;
+  margin-bottom: 6vh;
 } 
 }
 .contacts__email{
@@ -166,7 +160,7 @@ left: 10%;
   margin-bottom: 5vh;
 }
 @media (min-width: 1200px) {  
-  margin-bottom: 7vh;
+  margin-bottom: 6vh;
 }
 }
 address{
@@ -175,7 +169,7 @@ address{
   margin-bottom: 5vh;
 }
 @media (min-width: 1200px) {  
-  margin-bottom: 7vh;
+  margin-bottom: 6vh;
 }
   }
 .contacts__instagram{
@@ -253,7 +247,7 @@ height: 155%;
 <script>
 import Vue from 'vue'
 import * as VueGoogleMaps from 'vue2-google-maps'
-import ShowModal from "@/components/ShowModal.vue";
+
 Vue.use(VueGoogleMaps, {
     load: {
         key: 'AIzaSyAgfdOKG9WJQfsp5Udt10KEPUOyMIpvGyw',
@@ -263,7 +257,7 @@ Vue.use(VueGoogleMaps, {
 const myMarker = { lat: 50.47423600110085, lng:30.446527213481392,  };
 export default {
   name: "the-contacts",
-   components: {ShowModal},
+   components: {},
   methods: {
    showModal() {
         this.isModalVisible = true;
