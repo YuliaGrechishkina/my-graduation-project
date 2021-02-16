@@ -106,7 +106,7 @@
       <footer class="modal-footer">
         <slot name="footer">
           <div class="form__submit">
-            <input type="submit" @click='send()' class="btn-green" value="записатися" />
+            <input type="submit" @click='send()' class="btn-green" value="записатися"  />
             <p v-if='errorMessage'>{{ errorMessage }}</p>
           </div>
         </slot>
@@ -132,6 +132,7 @@ export default {
     close() {
       this.$emit("close");
     },
+    
   },
 };
 </script>
