@@ -106,7 +106,8 @@
       <footer class="modal-footer">
         <slot name="footer">
           <div class="form__submit">
-            <input type="submit" class="btn-green" value="записатися" />
+            <input type="submit" @click='send()' class="btn-green" value="записатися" />
+            <p v-if='errorMessage'>{{ errorMessage }}</p>
           </div>
         </slot>
       </footer>
@@ -116,6 +117,7 @@
 <script>
 export default {
   name: "ShowModal",
+
 
   data() {
     return {
@@ -216,6 +218,7 @@ export default {
   position: relative;
   padding: 10px 50px;
   height: 75%;
+  
 }
 
 .btn-close {
@@ -227,8 +230,24 @@ export default {
   background: transparent;
   position: absolute;
   top: -10%;
-  right: 0;
-  font-size: 25px;
+  right: -5%;
+  font-size: 4vh;
+  @media (min-width: 576px) { }
+
+@media (min-width: 768px) {  
+ 
+}
+@media (min-width: 992px) {  
+ 
+}
+@media (min-width: 1200px) {  
+ font-size: 25px;
+right: 0;
+}
+@media (min-width: 1400px) {
+
+  }
+
 }
 
 .btn-green {
@@ -244,7 +263,23 @@ export default {
 }
 
 .modal-header h1 {
-  width: 70%;
+  width: 100%;
+  font-size: 3vh;
+  @media (min-width: 576px) { }
+
+@media (min-width: 768px) {  
+ 
+}
+@media (min-width: 992px) {  
+ 
+}
+@media (min-width: 1200px) {  
+ 
+}
+@media (min-width: 1400px) {
+width: 70%;
+  }
+
 }
 
 .btn-close:hover {

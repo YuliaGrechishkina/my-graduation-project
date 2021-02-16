@@ -82,7 +82,7 @@ height: 60vh;
  min-height: 85vh;
 }
 @media (min-width: 992px) {  
-min-height: 100vh;
+min-height: 90vh;
 }
 @media (min-width: 1200px) {  
  min-height: 130vh;
@@ -125,7 +125,7 @@ z-index: 1;
 }
 @media (min-width: 992px) { 
  width: 40%;
-   height: 25%;
+   height: 15%;
   font-size: 4vh;
 }
 @media (min-width: 1200px) {  

@@ -43,7 +43,7 @@ export const services = [{
         service2: "Нарощування нігтів",
         service3: "парафінотерапія",
         service4: "корекція нігтів",
-        service5: "",
+        service5: "Манікюр",
     },
 
     {
@@ -55,7 +55,7 @@ export const services = [{
         service2: "корекція нігтів",
         service3: "SPA догляд",
         service4: "парафінотерапія",
-        service5: "",
+        service5: "педікюр",
     },
 
     {
