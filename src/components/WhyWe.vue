@@ -84,6 +84,7 @@
 
 <style scoped lang="scss">
 .why_we {
+  background-color: rgba(247, 175, 137, .3);
   height: 100vh;
    width: 100%;
   display: flex;

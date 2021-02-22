@@ -9,7 +9,7 @@
                                 :autoplaySpeed="5000"
                                 :edgeFriction = "0.35"
                                 :speed = "500"
-                                :slidesToShow = "3"
+                                :slidesToShow = "2"
                                 :slidesToScroll = "1"
                                :infinite="true"
                                :pauseOnDotsHover="true"
@@ -47,6 +47,7 @@ export default {
 
 <style scoped lang="scss">
 .reviews{
+   background-color: rgba(247, 175, 137, .3);
      height: 70vh;
    width: 100%;
        display: flex;
@@ -68,6 +69,7 @@ export default {
   }
 }
 .reviews__title{
+ 
  display: flex;
   justify-content: center;
   align-items: center;
@@ -180,7 +182,7 @@ border-left: solid 5px rgba(255, 255, 255, 0.5);
   .reviews__text{
         font-style: italic;
           width: 100%;
-    font-size: 0.8vh;
+    font-size:1vh;
     line-height: 2.5;
    height:30%;
    margin-bottom: 15%;
@@ -191,7 +193,7 @@ border-left: solid 5px rgba(255, 255, 255, 0.5);
      align-items: center;
       text-align-last: left;
       font-weight: bold;
-      
+      max-width: 80%;
       @media (min-width: 576px) { }
 
 @media (min-width: 768px) {  

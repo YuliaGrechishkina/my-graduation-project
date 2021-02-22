@@ -46,6 +46,7 @@
 </template>
 <style scoped lang="scss">
 .сontacts {
+  
  width: 100%;
 position: relative;
 height: 90vh; 
@@ -227,19 +228,19 @@ color: #ffffff;
 .сontacts__block-color{
   background-image: url(../assets/1.jpg);
     width:45%;
-    height: 150%;
+    height: 100%;
     z-index: -1;
      position: absolute;
      right: 0;
-    top:-55%;
+    top:0;
       background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     @media (min-width: 992px){
-      height: 160%
+      height: 100%
     }
     @media (min-width: 1400px) {
-height: 155%;
+height: 100%;
   }
 }
 </style>

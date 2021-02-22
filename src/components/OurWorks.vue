@@ -142,11 +142,11 @@ z-index: 1;
 .works__block-color-sec{
   
     width:50%;
-    height: 130%;
+    height: 90%;
     z-index: -1;
      position: absolute;
      left: 0;
-    top: 30%;
+    top: 20%;
     background-image: url(../assets/1.jpg);
       background-repeat: no-repeat;
     background-position: center;
