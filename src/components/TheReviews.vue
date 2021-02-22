@@ -3,52 +3,43 @@
 
   <h1 class="reviews__title"> Відгуки наших клієнтів</h1>
         <div class="reviews__carousel">
-        <VueSlickCarousel :arrows="true" 
-                                :dots="false" 
-                                :autoplay="true"
-                                :autoplaySpeed="5000"
-                                :edgeFriction = "0.35"
-                                :speed = "500"
-                                :slidesToShow = "2"
-                                :slidesToScroll = "1"
-                               :infinite="true"
-                               :pauseOnDotsHover="true"
-                               :pauseOnHover="true"
-                               
-                                >
-                <div class="reviews__slide" v-for="review in reviews" :key="review.id">
-                  <div class="reviews__photo">
-           <img  alt="photo" :src= review.userImg> </div>
-               
-               <h3 class="reviews__text" >  &#8220; {{review.text}}  &#8222;</h3>
-                <p class="reviews__name"> &sim; {{review.userName}} </p>
-                
-                </div>
-       </VueSlickCarousel>
+<carousel-3d :autoplay="true" :autoplay-timeout="5000" :display="5">
+        <slide class="reviews__slide" v-for="(review, i) in reviews" :index="i" :key="review.id">
+          <div class="reviews__photo">
+             <img :src="review.userImg">
+          </div> 
+         
+          <h3 class="reviews__text" >  &#8220; {{review.text}}  &#8222;</h3>
+          <p class="reviews__name"> &sim; {{review.userName}} </p>
+        </slide>
+      </carousel-3d>
+          
+      
         </div>
         </div> 
 </template>
 
 <script>
-import VueSlickCarousel from "vue-slick-carousel";
-import "vue-slick-carousel/dist/vue-slick-carousel.css";
-import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
+import { Carousel3d, Slide } from 'vue-carousel-3d';
 import {reviews} from "./data";
 export default {
   name: "the-reviews",
-  components: {VueSlickCarousel},
+  components: {
+    Carousel3d,
+    Slide
+    },
   data() {
     return {
       reviews
     };
   }
 }
+
 </script>
 
 <style scoped lang="scss">
 .reviews{
-   background-color: rgba(247, 175, 137, .3);
-     height: 70vh;
+      height: 40vh;
    width: 100%;
        display: flex;
     justify-content: center;
@@ -56,16 +47,15 @@ export default {
  flex-direction: column;
  
  @media (min-width: 768px) {  
-
+ 
 }
 @media (min-width: 992px) {  
-  
 }
 @media (min-width: 1200px) {  
   
 }
 @media (min-width: 1400px) {
-
+height: 50vh;
   }
 }
 .reviews__title{
@@ -75,9 +65,9 @@ export default {
   align-items: center;
   text-align: center;
   width: 50%;
-  height: 10%;
+  height: 20%;
   margin-bottom: 1vh;
-  margin-top: -30%;
+  margin-top: -20%;
 margin-left: 25%;
 font-size: 2vh;
 color: #ffffff;
@@ -92,7 +82,7 @@ font-size: 3vh;}
 
 @media (min-width: 768px) {  
  width: 45%;
-  height: 10%;
+  height: 20%;
  margin-top: 0%;
 font-size: 3vh;
 margin-left: 45%;
@@ -100,7 +90,7 @@ margin-left: 45%;
 
 @media (min-width: 992px) {  
  width: 55%;
-  height: 10%;
+  height: 25%;
  margin-left: 35%;
 font-size: 3vh;
 }
@@ -136,14 +126,18 @@ font-size: 5vh;
 
 }
 .reviews__slide{
+   background-image: url(../assets/3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
      width: 100%;
      height: 56vh;
      display: flex;
      flex-direction:column;
     justify-content: center;
 align-items: center;
-padding: 5%;
-border-left: solid 5px rgba(255, 255, 255, 0.5);
+
+
 
 @media (min-width: 576px) { }
 
@@ -160,22 +154,21 @@ border-left: solid 5px rgba(255, 255, 255, 0.5);
 }
    }
 .reviews__photo{
-  background-image: url(../assets/1.jpg);
-      background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-   
+  width: 30%;
+   border: 2px solid white;
+     
+     margin-bottom: 1%;
     @media (min-width: 576px) { }
 
 @media (min-width: 768px) {  
-     margin-top: 10%;
+     
 }
 @media (min-width: 992px) {  
 
- margin-top: 10%;
+
 }
 @media (min-width: 1200px) {  
-   margin-top: 0;
+  
  
 }
 }
@@ -183,30 +176,25 @@ border-left: solid 5px rgba(255, 255, 255, 0.5);
         font-style: italic;
           width: 100%;
     font-size:1vh;
-    line-height: 2.5;
-   height:30%;
-   margin-bottom: 15%;
-    margin-top: 5vh;
-     
-         display: flex;
+        margin-bottom: 1%;
+          color: #275c4a;
+          display: flex;
      justify-content: center;
      align-items: center;
-      text-align-last: left;
+     text-align: center;
       font-weight: bold;
-      max-width: 80%;
-      @media (min-width: 576px) { }
-
+      max-width: 50%;
+           @media (min-width: 576px) { }
 @media (min-width: 768px) {  
- font-size:1.5vh;
- margin-bottom: 10vh;;
+ font-size:1.3vh;
+
 }
 @media (min-width: 992px) {  
  
 }
 @media (min-width: 1200px) {  
-  font-size: 2vh;
-      margin-bottom: 5vh;
-     padding-right: 30%;
+ 
+    
 }
   }
 
@@ -215,11 +203,9 @@ border-left: solid 5px rgba(255, 255, 255, 0.5);
      font-weight: bold;
      height: 20%;
      text-align: right;
-     width: 100%;
-     background-image: url(../assets/1.jpg);
-      background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+     width: 50%;
+     color: #275c4a;
+ margin-bottom: 5%;
     display: flex;
    align-items: center;
    justify-content: center;
@@ -232,7 +218,7 @@ border-left: solid 5px rgba(255, 255, 255, 0.5);
  
 }
 @media (min-width: 1200px) {  
-  font-size: 6vh;
+  font-size:2vh;
   
 }
 
