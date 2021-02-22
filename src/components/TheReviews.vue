@@ -39,7 +39,7 @@ export default {
 
 <style scoped lang="scss">
 .reviews{
-      height: 40vh;
+      height: 60vh;
    width: 100%;
        display: flex;
     justify-content: center;
@@ -55,7 +55,7 @@ export default {
   
 }
 @media (min-width: 1400px) {
-height: 50vh;
+height: 70vh;
   }
 }
 .reviews__title{
@@ -67,7 +67,7 @@ height: 50vh;
   width: 50%;
   height: 20%;
   margin-bottom: 1vh;
-  margin-top: -20%;
+  margin-top: -5%;
 margin-left: 25%;
 font-size: 2vh;
 color: #ffffff;
@@ -93,6 +93,7 @@ margin-left: 45%;
   height: 25%;
  margin-left: 35%;
 font-size: 3vh;
+ margin-top: 8%;
 }
 @media (min-width: 1200px) {  
   width: 60%;
