@@ -21,8 +21,8 @@
       </div>
 <div class="contacts__info">
 
- <a href="tel:+380673538620" class="contacts__phone">
-          <i class="fas fa-mobile-alt"> +38067 353 86 20</i>
+ <a href="tel:+38 097 189 70 56" class="contacts__phone">
+          <i class="fas fa-mobile-alt"> +38 097 189 70 56</i>
         </a>
 
         <address>
@@ -33,8 +33,8 @@
    <i class="fas fa-at"></i> yug.territoriya.krasoty@gmail.com
    </a>
 
-  <a href="https://www.instagram.com/yug.territoriya.krasoty/" class="contacts__instagram" target="_blank"> 
-  <i class="fab fa-instagram"></i> yug.territoriya.krasoty </a>
+  <a href="https://www.instagram.com/yug.the.best/" class="contacts__instagram" target="_blank"> 
+  <i class="fab fa-instagram"></i> yug.the.best </a>
 
    <button class="contacts__info-btn" id="show-modal" @click="showModal"  data-booking-btn>
 запис он-лайн
@@ -55,6 +55,7 @@ flex-direction: row;
 justify-content: space-around;
 @media (min-width: 768px) {  
  height: 60vh; 
+ 
 }
 @media (min-width: 992px) {  
  height: 60vh; 

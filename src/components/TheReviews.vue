@@ -3,7 +3,7 @@
 
   <h1 class="reviews__title"> Відгуки наших клієнтів</h1>
         <div class="reviews__carousel">
-<carousel-3d :autoplay="true" :autoplay-timeout="5000" :display="5">
+<carousel-3d :autoplay="true" :autoplay-timeout="4000" :display="5">
         <slide class="reviews__slide" v-for="(review, i) in reviews" :index="i" :key="review.id">
           <div class="reviews__photo">
              <img :src="review.userImg">
@@ -52,10 +52,10 @@ export default {
 @media (min-width: 992px) {  
 }
 @media (min-width: 1200px) {  
-  
+   height: 67vh;
 }
 @media (min-width: 1400px) {
-height: 70vh;
+
   }
 }
 .reviews__title{

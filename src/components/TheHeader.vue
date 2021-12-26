@@ -7,7 +7,7 @@
       </a>
       <div class="nav__contacns">
         <a href="tel:+380673538620"
-          ><i class="fas fa-mobile-alt"> +38067 353 86 20</i>
+          ><i class="fas fa-mobile-alt"> +38 097 189 70 56</i>
         </a>
 
         <address>
